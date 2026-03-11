@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI News</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Soft cursor glow that follows the mouse -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <main class="home">
+    <!-- Parallax wrapper — JS translates this based on mouse position -->
+    <div class="home-parallax" id="homeParallax">
+
+      <!-- Shrink wrapper — CSS animates this on load -->
+      <div class="home-wordmark-wrap" id="wordmarkWrap">
+        <h1 class="wordmark" aria-label="AI News">
+          <span class="word">
+            <span class="l-a">A</span><span class="l-i">I</span>
+          </span>
+          <span class="space"></span>
+          <span class="word">
+            <span class="l-n">N</span><span class="l-e">e</span><span class="l-w">w</span><span class="l-s">s</span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="home-actions" id="homeActions">
+        <a href="today.html" class="btn btn-primary">Read Today's News</a>
+        <a href="archive.html" class="btn btn-secondary">See All News</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
