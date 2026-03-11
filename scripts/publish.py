@@ -119,12 +119,12 @@ def update_index(report: dict):
 
 def git_push(date_str: str):
     os.chdir(SITE_DIR)
-    subprocess.run(["git", "pull", "--rebase"], check=True)
     subprocess.run(["git", "add", "data/"], check=True)
     subprocess.run(
         ["git", "commit", "-m", f"report: {date_str}"],
         check=True
     )
+    subprocess.run(["git", "pull", "--rebase"], check=True)
     subprocess.run(["git", "push"], check=True)
 
 

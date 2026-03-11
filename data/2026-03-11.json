@@ -1,8 +1,117 @@
 {
   "date": "March 11, 2026",
   "dateISO": "2026-03-11",
-  "lead": "Today's AI Rundown",
+  "lead": "Meta bought a social network where only AIs post",
   "theme": "This episode has a clear spine: **the agentic internet is taking shape and everyone wants to own it.** Meta buys the social layer for AI agents. Amazon goes to court to block AI agents from shopping. Karpathy builds a tool for agents that run science experiments. Altman predicts agents replace researchers by 2028. Runway builds world models for agents that understand space. LeCun raises $1B betting the whole approach is wrong. Almost every story today touches on agents acting in the world — and who gets to control that.",
-  "storyCount": 0,
-  "stories": []
+  "storyCount": 12,
+  "stories": [
+    {
+      "rank": 1,
+      "headline": "Meta bought a social network where only AIs post",
+      "summary": "Meta acquired Moltbook, a Reddit-like platform exclusively for AI agents, because it wants to own the infrastructure layer when AI assistants start acting on the internet.",
+      "score": 24,
+      "source": "TechCrunch, Axios, CNBC, 3 newsletters",
+      "url": "https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 2,
+      "headline": "A federal judge just told Perplexity's AI it's not allowed to shop on Amazon",
+      "summary": "First major legal ruling on AI agent commerce; if it holds, every AI \"browser agent\" faces the same wall.",
+      "score": 22,
+      "source": "Bloomberg, Engadget, GeekWire, 1 newsletter",
+      "url": "https://www.engadget.com/ai/amazon-wins-a-temporary-injunction-against-perplexitys-comet-browser-184000462.html",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 3,
+      "headline": "Yann LeCun raised $1.03 billion betting LLMs are a dead end",
+      "summary": "AMI Labs, his Paris startup building \"world models,\" closed Europe's largest-ever seed round.",
+      "score": 20,
+      "source": "TechCrunch, Fortune, Bloomberg, 1 newsletter",
+      "url": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 4,
+      "headline": "Karpathy open-sourced a tool that runs 100 ML experiments while you sleep",
+      "summary": "630 lines of Python, one GPU, wake up to a better model. Shopify's CEO already used it.",
+      "score": 20,
+      "source": "MarkTechPost, Subagent B",
+      "url": "https://www.marktechpost.com/2026/03/08/andrej-karpathy-open-sources-autoresearch-a-630-line-python-tool-letting-ai-agents-run-autonomous-ml-experiments-on-single-gpus/",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 5,
+      "headline": "ChatGPT comes back daily like Instagram, Spotify, and Gmail — but stickier",
+      "summary": "45% DAU:MAU ratio vs Gemini's 22%. Week-4 retention of 66% is higher than almost every app ever measured.",
+      "score": 20,
+      "source": "DemandSage, a16z, 1 newsletter",
+      "url": "https://www.demandsage.com/chatgpt-statistics/",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 6,
+      "headline": "Sam Altman wrote an essay predicting AI can do his own job by 2028",
+      "summary": "\"The Gentle Singularity\" frames the transition as gradual and sets a specific timeline: AI research intern by September 2026, true AI researcher by March 2028.",
+      "score": 19,
+      "source": "blog.samaltman.com",
+      "url": "https://blog.samaltman.com/the-gentle-singularity",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 7,
+      "headline": "Nvidia invested in Mira Murati's startup and handed it a gigawatt of compute",
+      "summary": "Thinking Machines Lab (former OpenAI CTO's company) gets hardware commitments so large it's comparable to a small national grid.",
+      "score": 18,
+      "source": "TechCrunch, Axios, CNBC, 1 newsletter",
+      "url": "https://techcrunch.com/2026/03/10/thinking-machines-lab-inks-massive-compute-deal-with-nvidia/",
+      "color": "#E07858"
+    },
+    {
+      "rank": 8,
+      "headline": "Runway's AI now tops every video benchmark AND released a world model",
+      "summary": "Gen-4.5 beats Google and OpenAI on text-to-video; GWM-1 adds explorable environments, talking avatars, and robot manipulation.",
+      "score": 18,
+      "source": "Runway Research, TechCrunch",
+      "url": "https://runwayml.com/research/introducing-runway-gen-4.5",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 9,
+      "headline": "OpenAI's GPT-5.4 has a 1-million-token context and can operate your computer",
+      "summary": "Released March 5 in three tiers; 33% fewer factual errors than GPT-5.2.",
+      "score": 18,
+      "source": "Fortune, TechCrunch",
+      "url": "https://fortune.com/2026/03/05/openai-new-model-gpt5-4-enterprise-agentic-anthropic/",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 10,
+      "headline": "Google Gemini Embedding 2 can search your text, images, video, and audio all at once",
+      "summary": "First natively multimodal embedding model; one query, any format, 100+ languages.",
+      "score": 16,
+      "source": "Google Blog, VentureBeat, 2 newsletters",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 11,
+      "headline": "Grok is under UK investigation for \"unhinged mode\"",
+      "summary": "After deepfake controversies, France raids, and bans in three countries, the UK is the latest regulator.",
+      "score": 16,
+      "source": "PBS, Crescendo",
+      "url": "https://www.crescendo.ai/blog/ai-controversies",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 12,
+      "headline": "Google researchers can now surgically steer what an AI model \"wants\"",
+      "summary": "Gemma Scope 2 lets researchers find and modify individual internal features — including ones linked to \"evaluation awareness\" and worse.",
+      "score": 16,
+      "source": "Google DeepMind, LessWrong, 1 newsletter",
+      "url": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
+      "color": "#5CBD9A"
+    }
+  ]
 }
