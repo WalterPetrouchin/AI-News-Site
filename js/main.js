@@ -26,7 +26,7 @@ function shuffled(arr) {
 
 // Assign random unique colors to all letter elements on the page
 function randomizeLetterColors() {
-  const letters = document.querySelectorAll('.l-a, .l-i, .l-n, .l-e, .l-w, .l-s');
+  const letters = document.querySelectorAll('span[class^="l-"]');
   if (!letters.length) return;
 
   const colors = shuffled(PALETTE);

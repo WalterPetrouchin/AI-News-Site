@@ -52,29 +52,33 @@ async function initTodayPage() {
 
 function renderToday(container, report) {
   // Update page title
-  document.title = `${report.date} — AI News`;
+  document.title = `${report.date} — Distillr`;
 
   const storiesHtml = report.stories.map(story => `
     <article class="story">
       <div class="story-meta">
         <span class="story-rank" style="color:${escapeHtml(story.color)}">#${story.rank}</span>
         <span class="story-source">${escapeHtml(story.source)}</span>
-        <span class="story-score" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">${story.score}/25</span>
+        <span class="story-score" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">${story.score}</span>
       </div>
       <h2><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener">${escapeHtml(story.headline)}</a></h2>
       <p>${escapeHtml(story.summary)}</p>
     </article>
   `).join('');
 
-  const themeHtml = report.theme
-    ? `<p class="theme-label">Today's theme: ${escapeHtml(report.theme)}</p>`
-    : '';
+  const sourcesHtml = report.stories
+    .filter(s => s.url)
+    .map(s => `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.source)} — ${escapeHtml(s.url)}</a></li>`)
+    .join('');
 
   container.innerHTML = `
     <p class="date-label">${escapeHtml(report.date)}</p>
-    <h1>Today's AI Rundown</h1>
-    ${themeHtml}
+    <h1>Today's Rundown</h1>
     ${storiesHtml}
+    <details class="sources-drawer">
+      <summary>Sources</summary>
+      <ul>${sourcesHtml}</ul>
+    </details>
   `;
 }
 

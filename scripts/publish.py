@@ -61,7 +61,7 @@ def parse_report(md_path: Path) -> dict:
     scan_text = quick_scan_match.group(1) if quick_scan_match else text
 
     story_pattern = re.compile(
-        r'-\s+\*\*(.+?)\*\*\s*[—–-]+\s*(.+?)\s*\[Score:\s*(\d+)/25\]'
+        r'-\s+\*\*(.+?)\*\*\s*[—–-]+\s*(.+?)\s*\[Score:\s*(\d+)/\d+\]'
         r'\s*\n\s+-\s+(.+?)\s*\|\s*(?:\[.+?\]\((https?://[^)]+)\)|(https?://\S+))',
         re.MULTILINE
     )
