@@ -62,18 +62,22 @@ def parse_report(md_path: Path) -> dict:
 
     story_pattern = re.compile(
         r'-\s+\*\*(.+?)\*\*\s*[—–-]+\s*(.+?)\s*\[Score:\s*(\d+)/25\]'
-        r'\s*\n\s+-\s+(.+?)\s*\|\s*(https?://\S+)',
+        r'\s*\n\s+-\s+(.+?)\s*\|\s*(?:\[.+?\]\((https?://[^)]+)\)|(https?://\S+))',
         re.MULTILINE
     )
 
     for i, m in enumerate(story_pattern.finditer(scan_text), 1):
+        # Group 5 = markdown link URL [text](url), group 6 = plain URL
+        url = (m.group(5) or m.group(6) or '').strip()
+        # Strip "Source: " prefix if present
+        source = re.sub(r'^Source:\s*', '', m.group(4).strip())
         stories.append({
             "rank":     i,
             "headline": m.group(1).strip(),
             "summary":  m.group(2).strip(),
             "score":    int(m.group(3)),
-            "source":   m.group(4).strip(),
-            "url":      m.group(5).strip().rstrip(')'),
+            "source":   source,
+            "url":      url,
             "color":    RANK_COLORS[(i - 1) % len(RANK_COLORS)],
         })
 
@@ -115,6 +119,7 @@ def update_index(report: dict):
 
 def git_push(date_str: str):
     os.chdir(SITE_DIR)
+    subprocess.run(["git", "pull", "--rebase"], check=True)
     subprocess.run(["git", "add", "data/"], check=True)
     subprocess.run(
         ["git", "commit", "-m", f"report: {date_str}"],
