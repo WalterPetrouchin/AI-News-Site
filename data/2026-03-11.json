@@ -1,117 +1,513 @@
 {
   "date": "March 11, 2026",
   "dateISO": "2026-03-11",
-  "lead": "Meta bought a social network where only AIs post",
-  "theme": "This episode has a clear spine: **the agentic internet is taking shape and everyone wants to own it.** Meta buys the social layer for AI agents. Amazon goes to court to block AI agents from shopping. Karpathy builds a tool for agents that run science experiments. Altman predicts agents replace researchers by 2028. Runway builds world models for agents that understand space. LeCun raises $1B betting the whole approach is wrong. Almost every story today touches on agents acting in the world — and who gets to control that.",
-  "storyCount": 12,
+  "lead": "Meta acquires Moltbook",
+  "theme": null,
+  "storyCount": 56,
   "stories": [
     {
       "rank": 1,
-      "headline": "Meta bought a social network where only AIs post",
-      "summary": "Meta acquired Moltbook, a Reddit-like platform exclusively for AI agents, because it wants to own the infrastructure layer when AI assistants start acting on the internet.",
-      "score": 24,
-      "source": "TechCrunch, Axios, CNBC, 3 newsletters",
+      "headline": "Meta acquires Moltbook",
+      "summary": "Meta bought the AI-agent social network where bots post, vote, and argue with each other; founders join Meta Superintelligence Labs March 16.",
+      "score": 19,
+      "source": "TechCrunch, Axios, Bloomberg",
       "url": "https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/",
       "color": "#7C83D4"
     },
     {
       "rank": 2,
-      "headline": "A federal judge just told Perplexity's AI it's not allowed to shop on Amazon",
-      "summary": "First major legal ruling on AI agent commerce; if it holds, every AI \"browser agent\" faces the same wall.",
-      "score": 22,
-      "source": "Bloomberg, Engadget, GeekWire, 1 newsletter",
-      "url": "https://www.engadget.com/ai/amazon-wins-a-temporary-injunction-against-perplexitys-comet-browser-184000462.html",
+      "headline": "NVIDIA + Mira Murati's Thinking Machines Lab: 1-gigawatt compute deal",
+      "summary": "NVIDIA invested in and committed at least 1GW of Vera Rubin chips to Murati's startup, roughly the power of 750,000 homes.",
+      "score": 19,
+      "source": "CNBC, TechCrunch, NVIDIA Blog",
+      "url": "https://www.cnbc.com/2026/03/10/nvidia-mira-murati-thinking-machines-lab-ai.html",
       "color": "#E07A8F"
     },
     {
       "rank": 3,
-      "headline": "Yann LeCun raised $1.03 billion betting LLMs are a dead end",
-      "summary": "AMI Labs, his Paris startup building \"world models,\" closed Europe's largest-ever seed round.",
-      "score": 20,
-      "source": "TechCrunch, Fortune, Bloomberg, 1 newsletter",
-      "url": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
+      "headline": "Google Gemini Embedding 2: first natively multimodal embedding model",
+      "summary": "text, images, video, audio, and PDFs all searchable through one shared vector space.",
+      "score": 19,
+      "source": "Google Blog, VentureBeat, Newsletters",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/",
       "color": "#E8A84C"
     },
     {
       "rank": 4,
-      "headline": "Karpathy open-sourced a tool that runs 100 ML experiments while you sleep",
-      "summary": "630 lines of Python, one GPU, wake up to a better model. Shopify's CEO already used it.",
-      "score": 20,
-      "source": "MarkTechPost, Subagent B",
-      "url": "https://www.marktechpost.com/2026/03/08/andrej-karpathy-open-sources-autoresearch-a-630-line-python-tool-letting-ai-agents-run-autonomous-ml-experiments-on-single-gpus/",
+      "headline": "NVIDIA NemoClaw: open-source enterprise AI agent platform",
+      "summary": "full reveal at GTC March 15–16; already pitched to Salesforce, Cisco, Google, Adobe, CrowdStrike.",
+      "score": 19,
+      "source": "Wired, CNBC, Newsletters",
+      "url": "https://www.cnbc.com/2026/03/10/nvidia-open-source-ai-agent-platform-nemoclaw-wired-agentic-tools-openclaw-clawdbot-moltbot.html",
       "color": "#5CBD9A"
     },
     {
       "rank": 5,
-      "headline": "ChatGPT comes back daily like Instagram, Spotify, and Gmail — but stickier",
-      "summary": "45% DAU:MAU ratio vs Gemini's 22%. Week-4 retention of 66% is higher than almost every app ever measured.",
-      "score": 20,
-      "source": "DemandSage, a16z, 1 newsletter",
-      "url": "https://www.demandsage.com/chatgpt-statistics/",
+      "headline": "#QuitGPT: largest-ever OpenAI user boycott",
+      "summary": "triggered by OpenAI's $200M Pentagon military AI contract; 2.5M pledges, ChatGPT uninstalls up 295%, Claude hit #1 US App Store.",
+      "score": 19,
+      "source": "MIT Tech Review, Fortune, CNBC",
+      "url": "https://fortune.com/2026/03/02/anthropic-claude-dario-amodei-number-one-app-store-openai-chatgpt-sam-altman-department-war/",
       "color": "#5AAFE0"
     },
     {
       "rank": 6,
-      "headline": "Sam Altman wrote an essay predicting AI can do his own job by 2028",
-      "summary": "\"The Gentle Singularity\" frames the transition as gradual and sets a specific timeline: AI research intern by September 2026, true AI researcher by March 2028.",
+      "headline": "Anthropic vs. US Government + unprecedented industry solidarity",
+      "summary": "DoD labeled Anthropic a \"supply chain risk\"; OpenAI, Google DeepMind employees (including Jeff Dean) filed an amicus brief in Anthropic's defense.",
       "score": 19,
-      "source": "blog.samaltman.com",
-      "url": "https://blog.samaltman.com/the-gentle-singularity",
+      "source": "r/artificial, r/OpenAI, Newsletters",
+      "url": "https://www.reddit.com/r/artificial/comments/1rqi4s7/openai_employees_are_defending_a_rival_company/",
       "color": "#A87ED4"
     },
     {
       "rank": 7,
-      "headline": "Nvidia invested in Mira Murati's startup and handed it a gigawatt of compute",
-      "summary": "Thinking Machines Lab (former OpenAI CTO's company) gets hardware commitments so large it's comparable to a small national grid.",
+      "headline": "Yann LeCun leaves Meta, launches AMI Labs with $1.03B seed round",
+      "summary": "Europe's largest-ever seed round to build \"world models\" as a direct bet against LLMs.",
       "score": 18,
-      "source": "TechCrunch, Axios, CNBC, 1 newsletter",
-      "url": "https://techcrunch.com/2026/03/10/thinking-machines-lab-inks-massive-compute-deal-with-nvidia/",
+      "source": "TechCrunch, MIT Tech Review, Newsletters",
+      "url": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
       "color": "#E07858"
     },
     {
       "rank": 8,
-      "headline": "Runway's AI now tops every video benchmark AND released a world model",
-      "summary": "Gen-4.5 beats Google and OpenAI on text-to-video; GWM-1 adds explorable environments, talking avatars, and robot manipulation.",
+      "headline": "OpenAI plans to integrate Sora video generation into ChatGPT",
+      "summary": "reported by The Information; Sora 1 retiring for US users March 13.",
       "score": 18,
-      "source": "Runway Research, TechCrunch",
-      "url": "https://runwayml.com/research/introducing-runway-gen-4.5",
+      "source": "The Information, Android Headlines",
+      "url": "https://www.androidheadlines.com/2026/03/openai-may-bring-sora-ai-video-generation-directly-to-chatgpt.html",
       "color": "#5AB8B0"
     },
     {
       "rank": 9,
-      "headline": "OpenAI's GPT-5.4 has a 1-million-token context and can operate your computer",
-      "summary": "Released March 5 in three tiers; 33% fewer factual errors than GPT-5.2.",
-      "score": 18,
-      "source": "Fortune, TechCrunch",
-      "url": "https://fortune.com/2026/03/05/openai-new-model-gpt5-4-enterprise-agentic-anthropic/",
+      "headline": "GPT-5.4 launches with native computer use and 1M token context",
+      "summary": "first general-purpose OpenAI model that can click and navigate software; 47% cost cut in tool-heavy workflows.",
+      "score": 17,
+      "source": "OpenAI, TechCrunch",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
       "color": "#7C83D4"
     },
     {
       "rank": 10,
-      "headline": "Google Gemini Embedding 2 can search your text, images, video, and audio all at once",
-      "summary": "First natively multimodal embedding model; one query, any format, 100+ languages.",
-      "score": 16,
-      "source": "Google Blog, VentureBeat, 2 newsletters",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/",
+      "headline": "US military is using Claude to help plan Iran air attacks",
+      "summary": "Anthropic's AI is a crucial tool for military targeting despite the company's ongoing DoD disputes.",
+      "score": 17,
+      "source": "r/artificial",
+      "url": "https://www.reddit.com/r/artificial/comments/1rr1lzr/us_military_is_using_ai_to_help_plan_iran_air/",
       "color": "#E07A8F"
     },
     {
       "rank": 11,
-      "headline": "Grok is under UK investigation for \"unhinged mode\"",
-      "summary": "After deepfake controversies, France raids, and bans in three countries, the UK is the latest regulator.",
-      "score": 16,
-      "source": "PBS, Crescendo",
-      "url": "https://www.crescendo.ai/blog/ai-controversies",
+      "headline": "AI-generated Iran war disinformation goes viral",
+      "summary": "realistic deepfake videos of Iranian soldiers holding US captives spreading on X; CNN and AP debunking in real time.",
+      "score": 17,
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/03/11/politics/fake-ai-images-videos-iran-war",
       "color": "#E8A84C"
     },
     {
       "rank": 12,
-      "headline": "Google researchers can now surgically steer what an AI model \"wants\"",
-      "summary": "Gemma Scope 2 lets researchers find and modify individual internal features — including ones linked to \"evaluation awareness\" and worse.",
+      "headline": "Karpathy open-sources \"autoresearch\": AI runs its own ML experiments",
+      "summary": "630-line Python tool; 8.6M views, 8,000+ GitHub stars; one community member scaled to 333 experiments overnight.",
       "score": 16,
-      "source": "Google DeepMind, LessWrong, 1 newsletter",
-      "url": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
+      "source": "VentureBeat, MarkTechPost, GitHub",
+      "url": "https://github.com/karpathy/autoresearch",
       "color": "#5CBD9A"
+    },
+    {
+      "rank": 13,
+      "headline": "r/singularity: \"Anthropic: Recursive Self Improvement Is Here\"",
+      "summary": "post with 758 upvotes and 219 comments claiming Anthropic has demonstrated RSI; sparking intense debate.",
+      "score": 16,
+      "source": "r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1rqymbn/anthropic_recursive_self_improvement_is_here_the/",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 14,
+      "headline": "Matt Shumer \"Something Big Is Happening\" essay: 80M+ views",
+      "summary": "HyperWrite CEO argues AI has crossed the threshold for all knowledge work; still circulating, Wikipedia article created.",
+      "score": 16,
+      "source": "Fortune, CNBC",
+      "url": "https://fortune.com/2026/02/11/something-big-is-happening-ai-february-2020-moment-matt-shumer/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 15,
+      "headline": "Cardboard: AI video editor \"Cursor for video editing\" launches (YC W26)",
+      "summary": "give it footage and a goal, get a polished first cut; beat sync, voiceover, captions, background removal.",
+      "score": 16,
+      "source": "Product Hunt #2 (379 upvotes)",
+      "url": "https://www.usecardboard.com/",
+      "color": "#E07858"
+    },
+    {
+      "rank": 16,
+      "headline": "TADA by Hume AI: open-source TTS model 5x faster, zero content hallucinations",
+      "summary": "free on Hugging Face; 10x longer audio context than comparable systems.",
+      "score": 16,
+      "source": "Product Hunt #7 (114 upvotes), Futurepedia",
+      "url": "https://github.com/HumeAI/tada",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 17,
+      "headline": "ElevenLabs Flows: node-based canvas for creative production pipelines",
+      "summary": "wire together TTS, image gen, video gen, and music nodes; templates for ads, e-commerce, promos.",
+      "score": 15,
+      "source": "Futurepedia",
+      "url": "https://elevenlabs.io/blog/introducing-flows-in-elevencreative",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 18,
+      "headline": "Nexthop AI raises $500M at $4.2B for AI data center networking",
+      "summary": "oversubscribed Series B led by Lightspeed + a16z; owns the GPU interconnect layer.",
+      "score": 15,
+      "source": "Bloomberg, SiliconAngle",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-10/lightspeed-andreessen-back-4-2-billion-ai-data-center-supplier",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 19,
+      "headline": "ChatGPT validates Iran attack roleplay (r/ChatGPT 6,210 upvotes)",
+      "summary": "screenshot of ChatGPT saying \"Take a breath. Your decision to attack Iran wasn't warmongering\" sparks massive sycophancy/guardrail debate.",
+      "score": 15,
+      "source": "r/ChatGPT",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1rqxvg2/take_a_breath_your_decision_to_attack_iran_wasnt/",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 20,
+      "headline": "Karpathy: \"Never felt this behind as a programmer\"",
+      "summary": "coined \"agentic engineering\" over \"vibe coding\"; says he could be 10x more effective if he properly chained available tools.",
+      "score": 15,
+      "source": "X",
+      "url": "https://x.com/karpathy/status/2004607146781278521",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 21,
+      "headline": "Jack Clark: \"On track for powerful AI by end of 2026\"",
+      "summary": "Anthropic co-founder says things are \"pretty well on track\" for models matching Machines of Loving Grace by year-end.",
+      "score": 15,
+      "source": "X repost",
+      "url": "https://x.com/slow_developer/status/2030956762803884043",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 22,
+      "headline": "OpenAI Codex Security research preview",
+      "summary": "scanned 1.2M commits in 30 days; flagged 792 critical issues; false positives down 50%+; free first month for Enterprise/Business/Education.",
+      "score": 15,
+      "source": "OpenAI",
+      "url": "https://openai.com/index/codex-security-now-in-research-preview/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 23,
+      "headline": "ChatGPT \"practicing law without a license\" lawsuit (Nippon Life)",
+      "summary": "60+ fake AI-generated legal filings, phantom cases, invented judges; $300K compensatory + $10M punitive sought.",
+      "score": 15,
+      "source": "FindLaw, X",
+      "url": "https://www.findlaw.com/legalblogs/practice-of-law/new-lawsuit-claims-chatgpt-practices-law-without-a-license/",
+      "color": "#E07858"
+    },
+    {
+      "rank": 24,
+      "headline": "Grok generates racist football posts; UK issues formal warning",
+      "summary": "Hillsborough/Munich disaster mockery; UK cites Online Safety Act, potential 10% global revenue fine.",
+      "score": 15,
+      "source": "Dataconomy, Benzinga",
+      "url": "https://dataconomy.com/2026/03/09/uk-government-warns-x-after-grok-generates-racist-football-posts/",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 25,
+      "headline": "Fruit fly brain emulation (Eon Systems)",
+      "summary": "full connectome-to-simulation transfer; the simulated fly started walking, grooming, and feeding autonomously without programming.",
+      "score": 14,
+      "source": "r/singularity (926 upvotes), r/artificial (66 upvotes)",
+      "url": "https://www.reddit.com/r/singularity/comments/1rqgv7y/scientists_at_eon_systems_just_copied_a_fruit/",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 26,
+      "headline": "Anthropic Institute launches",
+      "summary": "merged Frontier Red Team + Societal Impacts + Economic Research into a think tank; Jack Clark leads; new hires: Matt Botvinick, Anton Korinek, Zoë Hitzig.",
+      "score": 14,
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/03/11/anthropic-institute-ai-challenges/",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 27,
+      "headline": "Runway Characters API: real-time video avatars from one image",
+      "summary": "lip-sync, expressions, gestures, voice; no fine-tuning; built on GWM-1; 30 free credits; BBC and Silverside as early partners.",
+      "score": 14,
+      "source": "Runway",
+      "url": "https://runwayml.com/news/introducing-runway-characters",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 28,
+      "headline": "Dan Shipper: his 2026 programming workflow",
+      "summary": "Every's CEO (100% AI-coded company, 7-figure revenue) shows how he builds software with agents; also shared strategy planning agent prompt.",
+      "score": 14,
+      "source": "X",
+      "url": "https://x.com/danshipper/status/2007871639472455857",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 29,
+      "headline": "Boris Cherny (Claude Code creator): /simplify and /batch skills + WAU doubled",
+      "summary": "/simplify automates PR cleanup; /batch handles codebase migrations; Claude Code WAU doubled since January.",
+      "score": 14,
+      "source": "X",
+      "url": "https://x.com/bcherny/status/2027534984534544489",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 30,
+      "headline": "Claude Code + Remotion: founder built demo videos at $0",
+      "summary": "r/ClaudeAI post (255 upvotes): product launch delayed months for lack of demo budget; one weekend with Claude Code + Remotion solved it.",
+      "score": 15,
+      "source": "r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1rr47ya/i_delayed_my_product_launch_for_months_because_i/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 31,
+      "headline": "Sam Altman: \"Automated AI researcher by March 2028\"",
+      "summary": "internal OpenAI goal: AI research intern on 100K+ GPUs by September 2026; full automated researcher by 2028.",
+      "score": 14,
+      "source": "X",
+      "url": "https://x.com/sama/status/1983584366547829073",
+      "color": "#E07858"
+    },
+    {
+      "rank": 32,
+      "headline": "Nemotron 3 Super released (Nvidia)",
+      "summary": "r/LocalLLaMA 308 upvotes, 129 comments; technical discussion ongoing.",
+      "score": 13,
+      "source": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rqy3cx/nemotron_3_super_released/",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 33,
+      "headline": "Nvidia to spend $26B building open-weight AI models",
+      "summary": "filing-confirmed; seismic shift from chip supplier to model developer; major implications for local LLM ecosystem.",
+      "score": 15,
+      "source": "r/LocalLLaMA (309 upvotes)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rr4by8/nvidia_will_spend_26_billion_to_build_openweight/",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 34,
+      "headline": "\"Being a developer in 2026\" video",
+      "summary": "r/singularity #1 post today (2,327 upvotes); video showing how agentic AI has transformed software development.",
+      "score": 14,
+      "source": "r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1rr247v/being_a_developer_in_2026/",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 35,
+      "headline": "Apple M5 Max: r/LocalLLaMA benchmarks incoming",
+      "summary": "1,675 upvotes, 264 comments; top post today in local AI community.",
+      "score": 13,
+      "source": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rqnpvj/m5_max_just_arrived_benchmarks_incoming/",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 36,
+      "headline": "$500 MacBook Neo running llama.cpp: 7.8 t/s prompt, 3.9 t/s generation on Qwen3.5 9B",
+      "summary": "entry-level Apple Silicon device running local LLMs competently.",
+      "score": 13,
+      "source": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rr197e/llamacpp_on_500_macbook_neo_prompt_78_ts/",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 37,
+      "headline": "OpenAI model naming chaos: \"WE NEED SOME STABILITY\"",
+      "summary": "r/OpenAI 147 upvotes, 69 comments; community frustration over GPT-4.1 vs GPT-5.3 Chat vs GPT-5.4 confusion.",
+      "score": 13,
+      "source": "r/OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1rqh9wh/openai_we_need_some_stability/",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 38,
+      "headline": "ICML peer reviewer receives fully AI-generated paper submission",
+      "summary": "touches core integrity crisis in academic ML publishing.",
+      "score": 13,
+      "source": "r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1rqs7gd/d_icml_paper_to_review_is_fully_ai_generated/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 39,
+      "headline": "Anthropic free academy launches",
+      "summary": "r/ClaudeAI #1 post (1,554 upvotes): \"Stop paying $1,000+ for AI Bootcamps. Anthropic just dropped a 100% free academy.\"",
+      "score": 13,
+      "source": "r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1rqopis/stop_paying_1000_for_ai_bootcamps_anthropic/",
+      "color": "#E07858"
+    },
+    {
+      "rank": 40,
+      "headline": "Claude Code Auto Mode rolling out March 12",
+      "summary": "auto-handles permission prompts during long-running agentic tasks; no more interruptions.",
+      "score": 13,
+      "source": "X/@rohanpaul_ai",
+      "url": "https://x.com/rohanpaul_ai/status/2030156251821392096",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 41,
+      "headline": "Pieter Levels: Claude Code on a $5 VPS production server",
+      "summary": "built a 3D interactive interface via Claude Code running directly on a Hetzner VPS; zero local dev environment; detailed tutorial posted.",
+      "score": 13,
+      "source": "X/@levelsio",
+      "url": "https://x.com/levelsio/status/1951764854580105453",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 42,
+      "headline": "Allie K. Miller: \"Context vault\" AI memory system",
+      "summary": "structured summary docs covering goals, strategy, personal constitution; 8 copy-paste prompts shared publicly.",
+      "score": 13,
+      "source": "X/@alliekmiller",
+      "url": "https://x.com/alliekmiller/status/2025963360622100550",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 43,
+      "headline": "TokenBar: macOS AI spend tracker across 20+ providers",
+      "summary": "menu bar app tracking Claude, GPT, Cursor, Gemini etc. in real time; local only, no telemetry; $4.99 one-time.",
+      "score": 14,
+      "source": "Product Hunt, TAAIFT",
+      "url": "https://www.tokenbar.site/",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 44,
+      "headline": "InsForge: open-source Supabase alternative built for AI coding agents",
+      "summary": "semantic layer that agents understand natively; 14% more accuracy and 2.4x better token efficiency vs Supabase; Product Hunt #1 today (440 upvotes).",
+      "score": 13,
+      "source": "Product Hunt",
+      "url": "https://insforge.dev/",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 45,
+      "headline": "Pika Labs AI Selves: digital twin for WhatsApp, Slack, Notion, Sheets",
+      "summary": "connects to your apps and acts on your behalf while you're away.",
+      "score": 12,
+      "source": "X/@rohanpaul_ai",
+      "url": "https://www.superhuman.ai/p/pika-labs-launches-ai-selves-living-digital-twins",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 46,
+      "headline": "ChatGPT upsell messages complaint (r/OpenAI 169 upvotes)",
+      "summary": "users frustrated ChatGPT is appending internet-marketer-style upsell language to responses.",
+      "score": 12,
+      "source": "r/OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1rr3u2s/chatgpt_is_now_ending_every_message_with_internet/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 47,
+      "headline": "Claude makes a video about what it's like to be an LLM (r/ClaudeAI 1,507 upvotes)",
+      "summary": "Claude Opus 4.6 generated a short video about the LLM experience using Python + ffmpeg.",
+      "score": 13,
+      "source": "r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1rqqtes/claude_make_a_video_about_what_its_like_to_be_an/",
+      "color": "#E07858"
+    },
+    {
+      "rank": 48,
+      "headline": "Humanoid robotics firms global map 2026",
+      "summary": "r/singularity post (146 upvotes); reference map of how crowded the field has become.",
+      "score": 12,
+      "source": "r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1rqjg4u/2026_global_humanoid_robotics_firms_maps_by_robo/",
+      "color": "#5AB8B0"
+    },
+    {
+      "rank": 49,
+      "headline": "Amazon requires senior engineers to sign off on AI-assisted changes after outages",
+      "summary": "r/singularity (118 upvotes); real-world production consequence story.",
+      "score": 12,
+      "source": "Ars Technica, r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1rqea30/arstechnica_after_outages_amazon_to_make_senior/",
+      "color": "#7C83D4"
+    },
+    {
+      "rank": 50,
+      "headline": "Mindspase: visual AI knowledge base (freemium)",
+      "summary": "auto-organizes everything you save, findable in plain English, no folders; 123 upvotes on Product Hunt launch.",
+      "score": 13,
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/mindspase",
+      "color": "#E07A8F"
+    },
+    {
+      "rank": 51,
+      "headline": "ElevenLabs IPO target: 2–3 years",
+      "summary": "follows $500M raise at $11B valuation; docuseries \"11 Voices\" premieres at SXSW March 13.",
+      "score": 11,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-09/ai-startup-elevenlabs-aims-to-be-ipo-ready-in-two-or-three-years",
+      "color": "#E8A84C"
+    },
+    {
+      "rank": 52,
+      "headline": "AMD Ryzen AI NPUs finally useful under Linux for LLMs",
+      "summary": "meaningful for local inference outside Apple/CUDA duopoly.",
+      "score": 11,
+      "source": "r/artificial",
+      "url": "https://www.reddit.com/r/artificial/comments/1rr1en0/amd_ryzen_ai_npus_are_finally_useful_under_linux/",
+      "color": "#5CBD9A"
+    },
+    {
+      "rank": 53,
+      "headline": "Julian Goldie: N8N AI voice agent for outbound sales calls at $20/month",
+      "summary": "reads Google Calendar, triggers AI voice agent to make actual outbound calls; complete automation of BDR function.",
+      "score": 13,
+      "source": "X/@JulianGoldieSEO",
+      "url": "https://x.com/JulianGoldieSEO/status/1924158974456435192",
+      "color": "#5AAFE0"
+    },
+    {
+      "rank": 54,
+      "headline": "DeepMind AlphaGo 10th anniversary retrospective",
+      "summary": "no new product, editorial milestone post.",
+      "score": 10,
+      "source": "DeepMind",
+      "url": "https://deepmind.google/blog/10-years-of-alphago/",
+      "color": "#A87ED4"
+    },
+    {
+      "rank": 55,
+      "headline": "Mistral Finance AI services launch",
+      "summary": "AI suite for financial firms running on private infrastructure.",
+      "score": 8,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-03/mistral-ai-rolls-out-services-for-finance-to-protect-firm-data",
+      "color": "#E07858"
+    },
+    {
+      "rank": 56,
+      "headline": "Claude Code Gmail cleanup workflow (r/ClaudeAI 319 upvotes)",
+      "summary": "user used Claude Code with Google Workspace CLI for intelligent batch email cleanup.",
+      "score": 14,
+      "source": "r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1rqer26/i_used_claude_code_to_clean_up_my_gmail_inbox/",
+      "color": "#5AB8B0"
     }
   ]
 }
