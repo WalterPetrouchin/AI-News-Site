@@ -24,6 +24,11 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+function capFirst(str) {
+  if (!str) return str;
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 function showError(container, message) {
   container.innerHTML = `<p class="empty-state">${escapeHtml(message)}</p>`;
 }
@@ -60,7 +65,7 @@ function storyRowHtml(story, isEssential) {
       <div class="body-section">
         <span class="body-section-label">${escapeHtml(label)}</span>
         <ul class="story-bullets">
-          ${bullets.map(b => `<li>${escapeHtml(b)}</li>`).join('')}
+          ${bullets.map(b => `<li>${escapeHtml(capFirst(b))}</li>`).join('')}
         </ul>
       </div>`;
   }
@@ -69,7 +74,7 @@ function storyRowHtml(story, isEssential) {
   if (!hasSections) {
     const bodyPoints = [story.bodyParagraph1, story.bodyParagraph2, story.bodyParagraph3].filter(Boolean);
     if (bodyPoints.length) {
-      bodyInnerHtml += `<ul class="story-bullets">${bodyPoints.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>`;
+      bodyInnerHtml += `<ul class="story-bullets">${bodyPoints.map(p => `<li>${escapeHtml(capFirst(p))}</li>`).join('')}</ul>`;
     }
   }
 
