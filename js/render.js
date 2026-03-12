@@ -1,5 +1,19 @@
 // render.js — Data fetching and rendering for today.html and archive.html
 
+// ─── Constants ────────────────────────────────────────────────────────────────
+
+const CATEGORY_ORDER = ['Brains', 'Bags', 'Shiny New Things', 'Uh Oh', "Everyone's Talking", 'Actually Useful', 'Try This'];
+
+const CATEGORY_SUBTITLES = {
+  'Brains':             'Models & Research',
+  'Bags':               'Business & Funding',
+  'Shiny New Things':   'Products & Tools',
+  'Uh Oh':              'Policy, Safety & Legal',
+  "Everyone's Talking": 'Community & Viral',
+  'Actually Useful':    'Builder Workflows',
+  'Try This':           'New AI Tools',
+};
+
 // ─── Shared helpers ──────────────────────────────────────────────────────────
 
 function escapeHtml(str) {
@@ -14,13 +28,74 @@ function showError(container, message) {
   container.innerHTML = `<p class="empty-state">${escapeHtml(message)}</p>`;
 }
 
+// ─── Story rendering ──────────────────────────────────────────────────────────
+
+function storyRowHtml(story, isEssential) {
+  const hasBody = story.bodyParagraph1;
+
+  const badge = isEssential
+    ? `<span class="essential-badge" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">Need to know</span>`
+    : '';
+
+  const expandBtn = hasBody
+    ? `<button class="expand-btn" aria-expanded="false">More ↓</button>`
+    : '';
+
+  const bodyHtml = hasBody ? `
+    <div class="story-expand">
+      <div class="story-expand-inner">
+        <div class="story-body">
+          <p>${escapeHtml(story.bodyParagraph1)}</p>
+          ${story.bodyParagraph2 ? `<p>${escapeHtml(story.bodyParagraph2)}</p>` : ''}
+          ${story.bodyParagraph3 ? `<p>${escapeHtml(story.bodyParagraph3)}</p>` : ''}
+          ${story.sourceQuip ? `
+            <p class="source-quip">${escapeHtml(story.sourceQuip)} <a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" style="color:${escapeHtml(story.color)}">Source →</a></p>
+          ` : story.url ? `
+            <p class="source-quip"><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" style="color:${escapeHtml(story.color)}">Source →</a></p>
+          ` : ''}
+        </div>
+      </div>
+    </div>
+  ` : '';
+
+  return `
+    <div class="story-row${isEssential ? ' story-row--essential' : ''}">
+      <div class="story-row-main">
+        <div class="story-row-text">
+          ${badge}<a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" class="story-headline">${escapeHtml(story.headline)}</a><span class="story-summary-sep"> — </span><span class="story-summary">${escapeHtml(story.summary)}</span>
+        </div>
+        ${expandBtn}
+      </div>
+      ${bodyHtml}
+    </div>
+  `;
+}
+
+function groupByCategory(stories) {
+  const groups = {};
+  for (const cat of CATEGORY_ORDER) {
+    groups[cat] = [];
+  }
+  const uncategorized = [];
+
+  for (const story of stories) {
+    const cat = story.category;
+    if (cat && groups[cat] !== undefined) {
+      groups[cat].push(story);
+    } else {
+      uncategorized.push(story);
+    }
+  }
+
+  return { groups, uncategorized };
+}
+
 // ─── Today page ──────────────────────────────────────────────────────────────
 
 async function initTodayPage() {
   const container = document.getElementById('todayContent');
   if (!container) return;
 
-  // Check for ?date=YYYY-MM-DD query param (used by archive links)
   const params = new URLSearchParams(window.location.search);
   const dateParam = params.get('date');
 
@@ -51,35 +126,96 @@ async function initTodayPage() {
 }
 
 function renderToday(container, report) {
-  // Update page title
   document.title = `${report.date} — Distillr`;
 
-  const storiesHtml = report.stories.map(story => `
-    <article class="story">
-      <div class="story-meta">
-        <span class="story-rank" style="color:${escapeHtml(story.color)}">#${story.rank}</span>
-        <span class="story-source">${escapeHtml(story.source)}</span>
-        <span class="story-score" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">${story.score}</span>
-      </div>
-      <h2><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener">${escapeHtml(story.headline)}</a></h2>
-      <p>${escapeHtml(story.summary)}</p>
-    </article>
-  `).join('');
+  const top4 = report.stories.filter(s => s.top4);
+  const rest  = report.stories.filter(s => !s.top4);
 
+  // ── Essentials zone ──────────────────────────────────────────────────────
+  const essentialsHtml = top4.length ? `
+    <div class="essentials-zone">
+      <span class="essentials-label">The Essentials</span>
+      ${top4.map(s => storyRowHtml(s, true)).join('')}
+    </div>
+  ` : '';
+
+  // ── Transition divider ────────────────────────────────────────────────────
+  const transitionText = report.transitionLine || 'Everything else';
+  const transitionHtml = (top4.length && rest.length) ? `
+    <div class="transition-divider">
+      <span>${escapeHtml(transitionText)}</span>
+    </div>
+  ` : '';
+
+  // ── Categorized full list ─────────────────────────────────────────────────
+  const { groups, uncategorized } = groupByCategory(rest);
+
+  let fullListHtml = '';
+  for (const cat of CATEGORY_ORDER) {
+    const stories = groups[cat];
+    if (!stories || !stories.length) continue;
+    const subtitle = CATEGORY_SUBTITLES[cat] || '';
+    fullListHtml += `
+      <section class="category-section">
+        <div class="category-header">
+          <span class="category-title">${escapeHtml(cat)}</span>
+          <span class="category-subtitle">${escapeHtml(subtitle)}</span>
+        </div>
+        ${stories.map(s => storyRowHtml(s, false)).join('')}
+      </section>
+    `;
+  }
+
+  if (uncategorized.length) {
+    fullListHtml += `
+      <section class="category-section">
+        <div class="category-header">
+          <span class="category-title">More</span>
+        </div>
+        ${uncategorized.map(s => storyRowHtml(s, false)).join('')}
+      </section>
+    `;
+  }
+
+  // ── Sources drawer ────────────────────────────────────────────────────────
   const sourcesHtml = report.stories
     .filter(s => s.url)
     .map(s => `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.source)} — ${escapeHtml(s.url)}</a></li>`)
     .join('');
 
   container.innerHTML = `
-    <p class="date-label">${escapeHtml(report.date)}</p>
-    <h1>Today's Rundown</h1>
-    ${storiesHtml}
+    <div class="report-header">
+      <p class="date-label">${escapeHtml(report.date)}</p>
+      <h1>Today's Rundown</h1>
+      ${report.welcomeLine ? `<p class="welcome-line">${escapeHtml(report.welcomeLine)}</p>` : ''}
+    </div>
+    ${essentialsHtml}
+    ${transitionHtml}
+    <div class="full-list">
+      ${fullListHtml}
+    </div>
     <details class="sources-drawer">
       <summary>Sources</summary>
       <ul>${sourcesHtml}</ul>
     </details>
   `;
+
+  initExpandCollapse(container);
+}
+
+function initExpandCollapse(container) {
+  container.addEventListener('click', e => {
+    const btn = e.target.closest('.expand-btn');
+    if (!btn) return;
+    const row = btn.closest('.story-row');
+    if (!row) return;
+    const panel = row.querySelector('.story-expand');
+    if (!panel) return;
+
+    const isOpen = panel.classList.toggle('open');
+    btn.textContent = isOpen ? 'Less ↑' : 'More ↓';
+    btn.setAttribute('aria-expanded', String(isOpen));
+  });
 }
 
 // ─── Archive page ─────────────────────────────────────────────────────────────
@@ -105,19 +241,20 @@ async function initArchivePage() {
 }
 
 function renderArchive(container, index) {
-  const tilesHtml = index.map((entry, i) => {
-    const color = [
-      '#7C83D4', '#E07A8F', '#E8A84C',
-      '#5CBD9A', '#5AAFE0', '#A87ED4',
-    ][i % 6];
+  const colors = [
+    '#7C83D4', '#E07A8F', '#E8A84C',
+    '#5CBD9A', '#5AAFE0', '#A87ED4',
+  ];
 
+  const tilesHtml = index.map((entry, i) => {
+    const color = colors[i % colors.length];
     const href = `today.html?date=${encodeURIComponent(entry.dateISO)}`;
 
     return `
       <a href="${href}" class="tile">
         <span class="tile-accent" style="background:${color}"></span>
-        <span class="tile-headline">${escapeHtml(entry.lead)}</span>
-        <span class="tile-date">${escapeHtml(entry.date)}</span>
+        <span class="tile-date-big">${escapeHtml(entry.date)}</span>
+        <span class="tile-count">${entry.storyCount} stories</span>
       </a>
     `;
   }).join('');

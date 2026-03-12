@@ -255,7 +255,7 @@ a {
 /* ─── Today Page ────────────────────────────────────────────────────────────── */
 
 .today-page .content {
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -549,4 +549,244 @@ a {
 
 @media (max-width: 480px) {
   .tile-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── Report Header ──────────────────────────────────────────────────────────── */
+
+.report-header {
+  margin-bottom: 2.5rem;
+}
+
+/* Tighten the h1 margin — the report-header handles spacing below */
+.today-page h1 {
+  margin-bottom: 0.75rem;
+}
+
+.welcome-line {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.65;
+  margin-top: 0.5rem;
+}
+
+/* ─── Essentials Zone ───────────────────────────────────────────────────────── */
+
+.essentials-zone {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid #7C83D4;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.essentials-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7C83D4;
+  margin-bottom: 1.25rem;
+}
+
+/* ─── Story Rows ────────────────────────────────────────────────────────────── */
+
+.story-row {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.story-row:last-child {
+  border-bottom: none;
+}
+
+.essentials-zone .story-row:first-of-type {
+  padding-top: 0;
+}
+
+.story-row-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.story-row-text {
+  flex: 1;
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+.essential-badge {
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border-radius: 100px;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.story-headline {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.story-headline:hover {
+  opacity: 0.65;
+}
+
+.story-summary-sep {
+  color: var(--text-muted);
+}
+
+.story-summary {
+  color: var(--text-muted);
+}
+
+/* ─── Expand Button ─────────────────────────────────────────────────────────── */
+
+.expand-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 0.25rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+  margin-top: 0.15rem;
+}
+
+.expand-btn:hover {
+  background: var(--border);
+  color: var(--text);
+  border-color: #ccc;
+}
+
+/* ─── Expand Panel ───────────────────────────────────────────────────────────── */
+
+/* CSS grid-template-rows trick: animates from 0 to natural height with no JS */
+.story-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.story-expand.open {
+  grid-template-rows: 1fr;
+}
+
+.story-expand-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.story-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.source-quip {
+  font-style: italic;
+}
+
+.source-quip a {
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.source-quip a:hover {
+  opacity: 0.7;
+}
+
+/* ─── Transition Divider ────────────────────────────────────────────────────── */
+
+.transition-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.transition-divider::before,
+.transition-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ─── Full List & Category Sections ─────────────────────────────────────────── */
+
+.full-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+.category-subtitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ─── Archive Tile Redesign ─────────────────────────────────────────────────── */
+
+.tile-date-big {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.tile-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: auto;
 }
