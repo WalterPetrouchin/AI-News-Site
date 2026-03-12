@@ -146,7 +146,7 @@ a {
   margin-top: 2.5rem;
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.4s ease 0.7s, transform 0.4s ease 0.7s;
+  transition: opacity 0.4s ease, transform 0.4s ease;
   pointer-events: none;
 }
 

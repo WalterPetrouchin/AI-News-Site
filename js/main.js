@@ -41,10 +41,15 @@ function initHomeAnimation() {
   const actions = document.getElementById('homeActions');
   if (!wordmarkWrap || !actions) return;
 
+  // Step 1: start the shrink after a brief pause
   setTimeout(() => {
     wordmarkWrap.classList.add('shrunk');
-    actions.classList.add('visible');
   }, 600);
+
+  // Step 2: reveal buttons only after the shrink transition finishes (600ms pause + 900ms transition)
+  setTimeout(() => {
+    actions.classList.add('visible');
+  }, 1500);
 }
 
 // ─── Mouse parallax on the wordmark ─────────────────────────────────────────
