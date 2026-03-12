@@ -707,13 +707,27 @@ a {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1rem 0 0.5rem;
-  font-size: 0.92rem;
-  line-height: 1.75;
-  color: var(--text-muted);
+}
+
+.story-bullets {
+  list-style: disc;
+  padding-left: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-bullets li {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.7;
 }
 
 .source-quip {
+  font-size: 0.88rem;
   font-style: italic;
+  color: var(--text-muted);
 }
 
 .source-quip a {

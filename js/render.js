@@ -42,10 +42,11 @@ function storyRowHtml(story, isEssential) {
   // sourceQuip for every story so this button always has content to reveal.
   const expandBtn = `<button class="expand-btn" aria-expanded="false">More ↓</button>`;
 
+  const bodyPoints = [story.bodyParagraph1, story.bodyParagraph2, story.bodyParagraph3].filter(Boolean);
   let bodyInnerHtml = '';
-  if (story.bodyParagraph1) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph1)}</p>`;
-  if (story.bodyParagraph2) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph2)}</p>`;
-  if (story.bodyParagraph3) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph3)}</p>`;
+  if (bodyPoints.length) {
+    bodyInnerHtml += `<ul class="story-bullets">${bodyPoints.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>`;
+  }
   // Source quip text only — no source link (headline is already the link)
   if (story.sourceQuip) bodyInnerHtml += `<p class="source-quip">${escapeHtml(story.sourceQuip)}</p>`;
 
