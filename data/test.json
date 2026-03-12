@@ -1,0 +1,62 @@
+{
+  "date": "March 11, 2026 (Test)",
+  "dateISO": "test",
+  "lead": "#QuitGPT: largest-ever OpenAI user boycott",
+  "theme": null,
+  "storyCount": 2,
+  "welcomeLine": "This is a test of the new four-section expand format. Click More on any story.",
+  "transitionLine": "And here's one more for good measure",
+  "tagline": "Testing the new More section",
+  "stories": [
+    {
+      "rank": 1,
+      "headline": "#QuitGPT: largest-ever OpenAI user boycott",
+      "summary": "triggered by OpenAI's $200M Pentagon military AI contract; 2.5M pledges, ChatGPT uninstalls up 295%, Claude hit #1 US App Store.",
+      "score": 19,
+      "top4": true,
+      "source": "MIT Tech Review, Fortune, CNBC",
+      "url": "https://fortune.com/2026/03/02/anthropic-claude-dario-amodei-number-one-app-store-openai-chatgpt-sam-altman-department-war/",
+      "color": "#5AAFE0",
+      "category": "Uh Oh",
+      "whatHappened": [
+        "OpenAI signed a $200M contract to deploy AI inside Pentagon classified networks for autonomous weapons and surveillance on February 28.",
+        "ChatGPT uninstalls jumped 295% day-over-day the same day the contract leaked; 2.5M users signed pledges at quitgpt.org within a week.",
+        "Claude surged 51% in downloads and hit #1 on the US App Store. OpenAI robotics lead Caitlin Kalinowski resigned on principle."
+      ],
+      "whyItMatters": [
+        "This is the first mass consumer boycott of an AI company triggered by a single contract. It reshuffled the competitive rankings in real time.",
+        "Anthropic had declined a similar Pentagon offer and was simultaneously blacklisted by the DoD as a supply chain risk, making the timing look deliberately predatory on OpenAI's part."
+      ],
+      "whatsNext": [
+        "Sam Altman held an X AMA admitting the rollout 'looked opportunistic and sloppy' — watch whether OpenAI modifies the contract terms or doubles down.",
+        "If Claude holds the App Store top spot for more than a week, it marks a durable shift in brand perception, not just a protest bump."
+      ],
+      "yourMove": [
+        "If you use ChatGPT for work, now's a good moment to run a side-by-side with Claude on your actual tasks. The gap has narrowed enough that the switch might stick."
+      ],
+      "sourceQuip": "Still not satisfied? Okay, overachiever:"
+    },
+    {
+      "rank": 2,
+      "headline": "Karpathy open-sources 'autoresearch': AI runs its own ML experiments",
+      "summary": "630-line Python tool; 8.6M views, 8,000+ GitHub stars; one community member scaled to 333 experiments overnight.",
+      "score": 16,
+      "top4": false,
+      "source": "VentureBeat, MarkTechPost, GitHub",
+      "url": "https://github.com/karpathy/autoresearch",
+      "color": "#E07A8F",
+      "category": "Actually Useful",
+      "whatHappened": [
+        "Andrej Karpathy released a 630-line Python script that lets an AI agent autonomously run ML experiments on a single GPU, modifying training code and evaluating results in a loop.",
+        "Over 48 hours it ran roughly 100 experiments and cut nanotchat's benchmark training time by 11%, from 2.02 hours to 1.80 hours."
+      ],
+      "whyItMatters": [
+        "Unsupervised AI-driven research is no longer a thought experiment. A single GPU owner can now run a self-improving experiment loop overnight with off-the-shelf hardware."
+      ],
+      "whatsNext": [
+        "Karpathy is calling for a SETI@home-style distributed network of thousands of parallel agents running experiments around the clock. Community member Varun Mathur already scaled it to 333 parallel experiments overnight."
+      ],
+      "sourceQuip": "Still not satisfied? Okay, overachiever:"
+    }
+  ]
+}
