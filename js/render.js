@@ -31,38 +31,42 @@ function showError(container, message) {
 // ─── Story rendering ──────────────────────────────────────────────────────────
 
 function storyRowHtml(story, isEssential) {
-  const hasBody = story.bodyParagraph1;
+  const hasBody = !!(story.bodyParagraph1 || story.sourceQuip);
 
   const badge = isEssential
     ? `<span class="essential-badge" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">Need to know</span>`
     : '';
 
-  const expandBtn = hasBody
-    ? `<button class="expand-btn" aria-expanded="false">More ↓</button>`
-    : '';
+  // Always show the More button — if body is absent, expand shows a placeholder.
+  // NOTE: Future markdown enrichments must provide bodyParagraph1/2/3 and
+  // sourceQuip for every story so this button always has content to reveal.
+  const expandBtn = `<button class="expand-btn" aria-expanded="false">More ↓</button>`;
 
-  const bodyHtml = hasBody ? `
+  let bodyInnerHtml = '';
+  if (story.bodyParagraph1) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph1)}</p>`;
+  if (story.bodyParagraph2) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph2)}</p>`;
+  if (story.bodyParagraph3) bodyInnerHtml += `<p>${escapeHtml(story.bodyParagraph3)}</p>`;
+  // Source quip text only — no source link (headline is already the link)
+  if (story.sourceQuip) bodyInnerHtml += `<p class="source-quip">${escapeHtml(story.sourceQuip)}</p>`;
+
+  const bodyHtml = `
     <div class="story-expand">
       <div class="story-expand-inner">
-        <div class="story-body">
-          <p>${escapeHtml(story.bodyParagraph1)}</p>
-          ${story.bodyParagraph2 ? `<p>${escapeHtml(story.bodyParagraph2)}</p>` : ''}
-          ${story.bodyParagraph3 ? `<p>${escapeHtml(story.bodyParagraph3)}</p>` : ''}
-          ${story.sourceQuip ? `
-            <p class="source-quip">${escapeHtml(story.sourceQuip)} <a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" style="color:${escapeHtml(story.color)}">Source →</a></p>
-          ` : story.url ? `
-            <p class="source-quip"><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" style="color:${escapeHtml(story.color)}">Source →</a></p>
-          ` : ''}
+        <div class="story-body${bodyInnerHtml ? '' : ' story-body--empty'}">
+          ${bodyInnerHtml}
         </div>
       </div>
     </div>
-  ` : '';
+  `;
 
   return `
     <div class="story-row${isEssential ? ' story-row--essential' : ''}">
       <div class="story-row-main">
         <div class="story-row-text">
-          ${badge}<a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" class="story-headline">${escapeHtml(story.headline)}</a><span class="story-summary-sep"> — </span><span class="story-summary">${escapeHtml(story.summary)}</span>
+          <div class="story-headline-line">
+            ${badge}<a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" class="story-headline">${escapeHtml(story.headline)}</a>
+          </div>
+          <p class="story-summary">${escapeHtml(story.summary)}</p>
         </div>
         ${expandBtn}
       </div>
@@ -90,11 +94,38 @@ function groupByCategory(stories) {
   return { groups, uncategorized };
 }
 
+// ─── Progress bar ─────────────────────────────────────────────────────────────
+
+function initProgressBar() {
+  const bar = document.createElement('div');
+  bar.id = 'scroll-progress';
+  document.body.appendChild(bar);
+
+  function update() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+
+    const rawPct = Math.min(scrollTop / docHeight, 1);
+
+    // Psychological curve: exponent < 1 makes bar move faster at the start,
+    // giving the illusion of more progress than has actually been made.
+    const displayPct = Math.pow(rawPct, 0.55);
+
+    bar.style.width = (displayPct * 100) + '%';
+    bar.style.opacity = scrollTop > 40 ? '1' : '0';
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+}
+
 // ─── Today page ──────────────────────────────────────────────────────────────
 
 async function initTodayPage() {
   const container = document.getElementById('todayContent');
   if (!container) return;
+
+  initProgressBar();
 
   const params = new URLSearchParams(window.location.search);
   const dateParam = params.get('date');
@@ -140,7 +171,7 @@ function renderToday(container, report) {
   ` : '';
 
   // ── Transition divider ────────────────────────────────────────────────────
-  const transitionText = report.transitionLine || 'Everything else';
+  const transitionText = report.transitionLine || 'And now, the rest';
   const transitionHtml = (top4.length && rest.length) ? `
     <div class="transition-divider">
       <span>${escapeHtml(transitionText)}</span>
@@ -254,7 +285,7 @@ function renderArchive(container, index) {
       <a href="${href}" class="tile">
         <span class="tile-accent" style="background:${color}"></span>
         <span class="tile-date-big">${escapeHtml(entry.date)}</span>
-        <span class="tile-count">${entry.storyCount} stories</span>
+        <span class="tile-tagline">${escapeHtml(entry.tagline || entry.storyCount + ' stories')}</span>
       </a>
     `;
   }).join('');

@@ -255,7 +255,7 @@ a {
 /* ─── Today Page ────────────────────────────────────────────────────────────── */
 
 .today-page .content {
-  max-width: 920px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -614,7 +614,6 @@ a {
 
 .story-row-text {
   flex: 1;
-  font-size: 0.93rem;
   line-height: 1.65;
 }
 
@@ -632,10 +631,18 @@ a {
   top: -1px;
 }
 
+.story-headline-line {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
 .story-headline {
-  font-weight: 700;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--text);
   text-decoration: none;
+  letter-spacing: -0.01em;
   transition: opacity 0.2s ease;
 }
 
@@ -643,12 +650,13 @@ a {
   opacity: 0.65;
 }
 
-.story-summary-sep {
-  color: var(--text-muted);
-}
-
 .story-summary {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 500;
   color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* ─── Expand Button ─────────────────────────────────────────────────────────── */
@@ -789,4 +797,41 @@ a {
   font-weight: 600;
   color: var(--text-muted);
   margin-top: auto;
+}
+
+.tile-tagline {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: auto;
+  font-style: italic;
+}
+
+/* ─── Empty body placeholder ────────────────────────────────────────────────── */
+
+.story-body--empty::before {
+  content: 'Full breakdown coming.';
+  display: block;
+  font-style: italic;
+  color: var(--text-muted);
+  opacity: 0.45;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+}
+
+/* ─── Scroll Progress Bar ───────────────────────────────────────────────────── */
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  /* Cycles through the site's brand palette */
+  background: linear-gradient(90deg, #7C83D4, #E07A8F, #E8A84C, #5CBD9A, #5AAFE0);
+  z-index: 9999;
+  opacity: 0;
+  /* Width is set directly by JS — no transition so it tracks the scroll exactly */
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
