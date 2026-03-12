@@ -60,21 +60,31 @@ def extract_field(block: str, field_name: str) -> str | None:
 
 
 def parse_meta(text: str) -> dict:
-    """Extract welcomeLine and transitionLine from the ## Meta block."""
+    """Extract welcomeLine, transitionLine, and tagline from the ## Meta block.
+
+    Accepts both canonical names (welcomeLine, transitionLine) and
+    shorthand aliases (Welcome, Transition) for flexibility.
+    """
     meta = {}
-    meta_match = re.search(r'^## Meta\s*\n(.*?)(?=\n## |\Z)', text, re.DOTALL | re.MULTILINE)
+    # Stop at --- separator or next ## section
+    meta_match = re.search(r'^## Meta\s*\n(.*?)(?=\n---|\n## |\Z)', text, re.DOTALL | re.MULTILINE)
     if not meta_match:
         return meta
 
     block = meta_match.group(1)
 
-    welcome_match = re.search(r'-\s+\*\*welcomeLine\*\*[:\s]+(.+?)$', block, re.MULTILINE)
+    # Match both styles: **Welcome:** text  OR  **welcomeLine:** text
+    welcome_match = re.search(r'-\s+\*\*(?:welcomeLine|Welcome):?\*\*:?\s+(.+?)$', block, re.MULTILINE)
     if welcome_match:
         meta['welcomeLine'] = welcome_match.group(1).strip()
 
-    transition_match = re.search(r'-\s+\*\*transitionLine\*\*[:\s]+(.+?)$', block, re.MULTILINE)
+    transition_match = re.search(r'-\s+\*\*(?:transitionLine|Transition):?\*\*:?\s+(.+?)$', block, re.MULTILINE)
     if transition_match:
         meta['transitionLine'] = transition_match.group(1).strip()
+
+    tagline_match = re.search(r'-\s+\*\*tagline:?\*\*:?\s+(.+?)$', block, re.MULTILINE)
+    if tagline_match:
+        meta['tagline'] = tagline_match.group(1).strip()
 
     return meta
 
@@ -245,6 +255,8 @@ def parse_report(md_path: Path) -> dict:
         result['welcomeLine'] = meta['welcomeLine']
     if meta.get('transitionLine'):
         result['transitionLine'] = meta['transitionLine']
+    if meta.get('tagline'):
+        result['tagline'] = meta['tagline']
 
     return result
 
@@ -257,13 +269,16 @@ def update_index(report: dict):
     index = [e for e in index if e.get("dateISO") != report["dateISO"]]
 
     # Prepend so newest is first
-    index.insert(0, {
+    entry = {
         "date":       report["date"],
         "dateISO":    report["dateISO"],
         "file":       f"{report['dateISO']}.json",
         "lead":       report["lead"],
         "storyCount": report["storyCount"],
-    })
+    }
+    if report.get("tagline"):
+        entry["tagline"] = report["tagline"]
+    index.insert(0, entry)
 
     index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False))
     print(f"  index.json updated ({len(index)} entries)")

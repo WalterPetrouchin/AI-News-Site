@@ -187,7 +187,7 @@ function renderToday(container, report) {
     if (!stories || !stories.length) continue;
     const subtitle = CATEGORY_SUBTITLES[cat] || '';
     fullListHtml += `
-      <section class="category-section">
+      <section class="category-section" data-category="${escapeHtml(cat)}">
         <div class="category-header">
           <span class="category-title">${escapeHtml(cat)}</span>
           <span class="category-subtitle">${escapeHtml(subtitle)}</span>
@@ -199,7 +199,7 @@ function renderToday(container, report) {
 
   if (uncategorized.length) {
     fullListHtml += `
-      <section class="category-section">
+      <section class="category-section" data-category="More">
         <div class="category-header">
           <span class="category-title">More</span>
         </div>
@@ -236,16 +236,20 @@ function renderToday(container, report) {
 
 function initExpandCollapse(container) {
   container.addEventListener('click', e => {
-    const btn = e.target.closest('.expand-btn');
-    if (!btn) return;
-    const row = btn.closest('.story-row');
+    // Let link clicks through — headline should navigate, not expand
+    if (e.target.closest('a')) return;
+
+    const row = e.target.closest('.story-row');
     if (!row) return;
     const panel = row.querySelector('.story-expand');
     if (!panel) return;
 
+    const btn = row.querySelector('.expand-btn');
     const isOpen = panel.classList.toggle('open');
-    btn.textContent = isOpen ? 'Less ↑' : 'More ↓';
-    btn.setAttribute('aria-expanded', String(isOpen));
+    if (btn) {
+      btn.textContent = isOpen ? 'Less ↑' : 'More ↓';
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
   });
 }
 

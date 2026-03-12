@@ -255,7 +255,7 @@ a {
 /* ─── Today Page ────────────────────────────────────────────────────────────── */
 
 .today-page .content {
-  max-width: 1100px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -596,6 +596,7 @@ a {
 .story-row {
   padding: 0.85rem 0;
   border-bottom: 1px solid var(--border);
+  cursor: pointer;
 }
 
 .story-row:last-child {
@@ -806,6 +807,30 @@ a {
   margin-top: auto;
   font-style: italic;
 }
+
+/* ─── Category Color Accents ────────────────────────────────────────────────── */
+
+.category-section {
+  border-left: 3px solid transparent;
+  padding-left: 1.25rem;
+}
+
+.category-section[data-category="Brains"]             { border-left-color: #7C83D4; }
+.category-section[data-category="Bags"]               { border-left-color: #E8A84C; }
+.category-section[data-category="Shiny New Things"]   { border-left-color: #5CBD9A; }
+.category-section[data-category="Uh Oh"]              { border-left-color: #E07A8F; }
+.category-section[data-category="Everyone's Talking"] { border-left-color: #5AAFE0; }
+.category-section[data-category="Actually Useful"]    { border-left-color: #A87ED4; }
+.category-section[data-category="Try This"]           { border-left-color: #E07858; }
+.category-section[data-category="More"]               { border-left-color: var(--border); }
+
+.category-section[data-category="Brains"] .category-title             { color: #7C83D4; }
+.category-section[data-category="Bags"] .category-title               { color: #E8A84C; }
+.category-section[data-category="Shiny New Things"] .category-title   { color: #5CBD9A; }
+.category-section[data-category="Uh Oh"] .category-title              { color: #E07A8F; }
+.category-section[data-category="Everyone's Talking"] .category-title { color: #5AAFE0; }
+.category-section[data-category="Actually Useful"] .category-title    { color: #A87ED4; }
+.category-section[data-category="Try This"] .category-title           { color: #E07858; }
 
 /* ─── Empty body placeholder ────────────────────────────────────────────────── */
 
