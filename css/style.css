@@ -131,22 +131,22 @@ a {
 
 /* Shrink/slide animation on load */
 .home-wordmark-wrap {
-  transform: translateY(0px) scale(1);
-  transition: transform 0.8s cubic-bezier(0.34, 1.15, 0.64, 1);
+  transform: translateY(0px) scale(1.5);
+  transition: transform 0.9s cubic-bezier(0.34, 1.1, 0.64, 1);
 }
 
 .home-wordmark-wrap.shrunk {
   transform: translateY(-20px) scale(0.8);
 }
 
-/* Action buttons fade in after wordmark shrinks */
+/* Action buttons fade in the moment the wordmark starts shrinking */
 .home-actions {
   display: flex;
   gap: 1rem;
   margin-top: 2.5rem;
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.5s ease 0.35s, transform 0.5s ease 0.35s;
+  transition: opacity 0.5s ease, transform 0.5s ease;
   pointer-events: none;
 }
 
