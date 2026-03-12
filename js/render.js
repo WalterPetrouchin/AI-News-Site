@@ -42,11 +42,37 @@ function storyRowHtml(story, isEssential) {
   // sourceQuip for every story so this button always has content to reveal.
   const expandBtn = `<button class="expand-btn" aria-expanded="false">More ↓</button>`;
 
-  const bodyPoints = [story.bodyParagraph1, story.bodyParagraph2, story.bodyParagraph3].filter(Boolean);
   let bodyInnerHtml = '';
-  if (bodyPoints.length) {
-    bodyInnerHtml += `<ul class="story-bullets">${bodyPoints.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>`;
+
+  // Four-section body: What happened / Why it matters / What's next / Your move
+  const sections = [
+    { key: 'whatHappened',  label: 'What happened' },
+    { key: 'whyItMatters',  label: 'Why it matters' },
+    { key: 'whatsNext',     label: "What's next" },
+    { key: 'yourMove',      label: 'Your move' },
+  ];
+  let hasSections = false;
+  for (const { key, label } of sections) {
+    const bullets = story[key];
+    if (!bullets || !bullets.length) continue;
+    hasSections = true;
+    bodyInnerHtml += `
+      <div class="body-section">
+        <span class="body-section-label">${escapeHtml(label)}</span>
+        <ul class="story-bullets">
+          ${bullets.map(b => `<li>${escapeHtml(b)}</li>`).join('')}
+        </ul>
+      </div>`;
   }
+
+  // Fallback: old bodyParagraph1/2/3 format
+  if (!hasSections) {
+    const bodyPoints = [story.bodyParagraph1, story.bodyParagraph2, story.bodyParagraph3].filter(Boolean);
+    if (bodyPoints.length) {
+      bodyInnerHtml += `<ul class="story-bullets">${bodyPoints.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>`;
+    }
+  }
+
   // Source quip text only — no source link (headline is already the link)
   if (story.sourceQuip) bodyInnerHtml += `<p class="source-quip">${escapeHtml(story.sourceQuip)}</p>`;
 

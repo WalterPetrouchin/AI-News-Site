@@ -59,6 +59,24 @@ def extract_field(block: str, field_name: str) -> str | None:
     return re.sub(r'\s+', ' ', m.group(1)).strip()
 
 
+def extract_bullet_section(block: str, section_name: str) -> list:
+    """
+    Extract a list of sub-bullets from a section like:
+      - **What happened:**
+        - Bullet one
+        - Bullet two
+    Returns a list of strings, one per bullet.
+    """
+    pattern = (r'-\s+\*\*' + re.escape(section_name) + r':?\*\*'
+               r'[^\n]*\n'
+               r'((?:[ \t]+-\s+.+\n?)+)')
+    m = re.search(pattern, block, re.MULTILINE)
+    if not m:
+        return []
+    bullets = re.findall(r'[ \t]+-\s+(.+)', m.group(1))
+    return [b.strip() for b in bullets if b.strip()]
+
+
 def parse_meta(text: str) -> dict:
     """Extract welcomeLine, transitionLine, and tagline from the ## Meta block.
 
@@ -132,23 +150,28 @@ def parse_full_report(text: str) -> dict:
 
             entry = {'category': category}
 
-            # Try explicit Body 1/2/3 fields first (added by enrichment)
-            body1 = extract_field(block, 'Body 1') or extract_field(block, 'bodyParagraph1')
-            body2 = extract_field(block, 'Body 2') or extract_field(block, 'bodyParagraph2')
-            body3 = extract_field(block, 'Body 3') or extract_field(block, 'bodyParagraph3')
+            # New four-section format
+            what_happened  = extract_bullet_section(block, 'What happened')
+            why_it_matters = extract_bullet_section(block, 'Why it matters')
+            whats_next     = extract_bullet_section(block, "What's next")
+            your_move      = extract_bullet_section(block, 'Your move')
 
-            # Fall back to What happened + Why it matters
-            if not body1:
-                body1 = extract_field(block, 'What happened')
-                if not body2:
-                    body2 = extract_field(block, 'Why it matters')
+            if what_happened:  entry['whatHappened']  = what_happened
+            if why_it_matters: entry['whyItMatters']  = why_it_matters
+            if whats_next:     entry['whatsNext']      = whats_next
+            if your_move:      entry['yourMove']       = your_move
 
-            if body1:
-                entry['bodyParagraph1'] = body1
-            if body2:
-                entry['bodyParagraph2'] = body2
-            if body3:
-                entry['bodyParagraph3'] = body3
+            # Backward compat: old Body 1/2/3 / bodyParagraph format
+            if not what_happened:
+                body1 = extract_field(block, 'Body 1') or extract_field(block, 'bodyParagraph1')
+                body2 = extract_field(block, 'Body 2') or extract_field(block, 'bodyParagraph2')
+                body3 = extract_field(block, 'Body 3') or extract_field(block, 'bodyParagraph3')
+                if not body1:
+                    body1 = extract_field(block, 'What happened')
+                    body2 = body2 or extract_field(block, 'Why it matters')
+                if body1: entry['bodyParagraph1'] = body1
+                if body2: entry['bodyParagraph2'] = body2
+                if body3: entry['bodyParagraph3'] = body3
 
             source_quip = extract_field(block, 'Source quip') or extract_field(block, 'sourceQuip')
             if source_quip:
