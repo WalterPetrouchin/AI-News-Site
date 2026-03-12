@@ -736,5 +736,7 @@
       "category": "Actually Useful",
       "sourceQuip": "One more link won't hurt:"
     }
-  ]
+  ],
+  "welcomeLine": "Today in AI: someone quit ChatGPT, someone else used it to plan airstrikes, and Yann LeCun took $1 billion and moved to Paris. Just another Tuesday.",
+  "transitionLine": "You now know enough to sound smart at dinner. What follows is for people who want to know too much."
 }
