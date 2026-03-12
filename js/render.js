@@ -98,7 +98,7 @@ function storyRowHtml(story, isEssential) {
           <div class="story-headline-line">
             ${badge}<a href="${escapeHtml(story.url)}" target="_blank" rel="noopener" class="story-headline">${escapeHtml(story.headline)}</a>
           </div>
-          <p class="story-summary">${escapeHtml(story.summary)}</p>
+          <p class="story-summary">${escapeHtml(capFirst(story.summary))}</p>
         </div>
         ${expandBtn}
       </div>

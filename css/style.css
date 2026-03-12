@@ -139,14 +139,13 @@ a {
   transform: translateY(-20px) scale(0.8);
 }
 
-/* Action buttons fade in the moment the wordmark starts shrinking */
+/* Action buttons — invisible until JS adds .visible after shrink completes */
 .home-actions {
   display: flex;
   gap: 1rem;
   margin-top: 2.5rem;
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
   pointer-events: none;
 }
 
@@ -154,6 +153,7 @@ a {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 /* ─── Buttons ───────────────────────────────────────────────────────────────── */
@@ -763,10 +763,15 @@ a {
   gap: 1rem;
   margin: 2.5rem 0;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: clamp(0.58rem, 0.85vw, 0.72rem);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.transition-divider span {
+  text-wrap: balance;
+  text-align: center;
 }
 
 .transition-divider::before,
