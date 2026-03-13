@@ -255,7 +255,9 @@ def parse_report(md_path: Path) -> dict:
 
         if match:
             story['category'] = match.get('category')
-            for field in ('bodyParagraph1', 'bodyParagraph2', 'bodyParagraph3', 'sourceQuip'):
+            for field in ('bodyParagraph1', 'bodyParagraph2', 'bodyParagraph3',
+                         'whatHappened', 'whyItMatters', 'whatsNext', 'yourMove',
+                         'sourceQuip'):
                 if field in match:
                     story[field] = match[field]
 
@@ -336,7 +338,7 @@ def main():
 
     top4_count = sum(1 for s in report['stories'] if s.get('top4'))
     categorized = sum(1 for s in report['stories'] if s.get('category'))
-    has_body = sum(1 for s in report['stories'] if s.get('bodyParagraph1'))
+    has_body = sum(1 for s in report['stories'] if s.get('bodyParagraph1') or s.get('whatHappened'))
     print(f"  Top4:    {top4_count} stories flagged")
     print(f"  Cats:    {categorized}/{report['storyCount']} stories categorized")
     print(f"  Body:    {has_body}/{report['storyCount']} stories have expanded content")
