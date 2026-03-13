@@ -41,7 +41,24 @@
       "top4": true,
       "source": "CNBC, Euronews, BusinessToday, Reddit",
       "url": "https://www.cnbc.com/2026/03/03/openai-sam-altman-pentagon-deal-amended-surveillance-limits.html",
-      "color": "#E07A8F"
+      "color": "#E07A8F",
+      "category": "Uh Oh",
+      "whatHappened": [
+        "Feb 28: OpenAI announced model deployment inside Pentagon's classified network for \"any lawful purpose\"",
+        "Anthropic's Dario Amodei had publicly refused the same deal on ethical grounds",
+        "1.5M+ users signed boycott pledge. ChatGPT uninstalls spiked 295%",
+        "Claude hit #1 on the US App Store",
+        "Sam Altman later admitted it \"looked opportunistic and sloppy\" and added domestic surveillance limits"
+      ],
+      "whyItMatters": [
+        "Sharpest public ethics fracture in AI industry history",
+        "Anthropic won a PR war it didn't start"
+      ],
+      "whatsNext": [
+        "The amended deal terms and their enforcement",
+        "Long-term subscriber recovery for OpenAI"
+      ],
+      "sourceQuip": "1.5 million people uninstalled ChatGPT. Claude's servers had a very good week."
     },
     {
       "rank": 3,
@@ -403,7 +420,10 @@
       "top4": false,
       "source": "X (@emollick), Substack",
       "url": "https://x.com/emollick/status/2032097753011028164",
-      "color": "#7C83D4"
+      "color": "#7C83D4",
+      "whatHappened": [
+        "\"The Shape of the Thing\" on exponential AI improvement and early signs of massive work transformation."
+      ]
     },
     {
       "rank": 18,
@@ -459,7 +479,21 @@
       "top4": false,
       "source": "X (@karpathy), The New Stack",
       "url": "https://x.com/karpathy/status/2019137879310836075",
-      "color": "#5CBD9A"
+      "color": "#5CBD9A",
+      "category": "Everyone's Talking",
+      "whatHappened": [
+        "Marked 1-year anniversary of his \"vibe coding\" tweet",
+        "Coined \"agentic engineering\" as the professional successor",
+        "\"Never felt this much behind as a programmer. The profession is being dramatically refactored\"",
+        "Default is now orchestrating agents 99% of the time"
+      ],
+      "whyItMatters": [
+        "From the person who coined \"vibe coding,\" \"agentic engineering\" has the same viral naming potential"
+      ],
+      "whatsNext": [
+        "Job titles and role descriptions adopting this term"
+      ],
+      "sourceQuip": "The man who named vibe coding just named what comes after it."
     },
     {
       "rank": 21,
@@ -635,7 +669,10 @@
       "top4": false,
       "source": "X (@sama)",
       "url": "https://x.com/sama/status/1983584366547829073",
-      "color": "#5CBD9A"
+      "color": "#5CBD9A",
+      "whatHappened": [
+        "Internal goal: AI research intern by September 2026, true automated researcher by 2028."
+      ]
     },
     {
       "rank": 29,
@@ -928,7 +965,10 @@
       "top4": false,
       "source": "X (@jackclarkSF)",
       "url": "https://x.com/jackclarkSF",
-      "color": "#E07A8F"
+      "color": "#E07A8F",
+      "whatHappened": [
+        "Anthropic co-founder's timeline for powerful AI systems."
+      ]
     },
     {
       "rank": 43,
@@ -1089,7 +1129,10 @@
       "top4": false,
       "source": "TLDR AI",
       "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FF6M4dT",
-      "color": "#E07A8F"
+      "color": "#E07A8F",
+      "whatHappened": [
+        "AI code generation relieves the execution bottleneck that functioned as a barrier to entry."
+      ]
     },
     {
       "rank": 51,
@@ -1099,7 +1142,10 @@
       "top4": false,
       "source": "TLDR AI",
       "url": "https://weightythoughts.com/p/how-a-regular-person-can-utilize",
-      "color": "#E8A84C"
+      "color": "#E8A84C",
+      "whatHappened": [
+        "Modular framework shifts user from prompter to systems architect."
+      ]
     },
     {
       "rank": 52,
@@ -1130,7 +1176,10 @@
       "top4": false,
       "source": "TLDR AI",
       "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2F8KhZex",
-      "color": "#5AAFE0"
+      "color": "#5AAFE0",
+      "whatHappened": [
+        "Shopify CEO trained a 0.8B model that outscored his previous 1.6B overnight."
+      ]
     },
     {
       "rank": 54,
@@ -1202,7 +1251,10 @@
       "top4": false,
       "source": "Reddit",
       "url": "https://www.reddit.com/r/ChatGPT/comments/1rrmfqr/",
-      "color": "#7C83D4"
+      "color": "#7C83D4",
+      "whatHappened": [
+        "2,202 upvotes, 654 comments on AI refusal behavior."
+      ]
     },
     {
       "rank": 58,
@@ -1276,7 +1328,10 @@
       "top4": false,
       "source": "Ben's Bites",
       "url": "https://bensbites.substack.com",
-      "color": "#5AAFE0"
+      "color": "#5AAFE0",
+      "whatHappened": [
+        "New tool for searching across media types."
+      ]
     },
     {
       "rank": 62,
@@ -1368,7 +1423,10 @@
       "top4": false,
       "source": "Releasebot",
       "url": "https://releasebot.io/updates/openai",
-      "color": "#E07A8F"
+      "color": "#E07A8F",
+      "whatHappened": [
+        "GPT-5.1 Instant/Thinking/Pro migrated to GPT-5.3/5.4."
+      ]
     },
     {
       "rank": 67,
@@ -1378,7 +1436,15 @@
       "top4": false,
       "source": "Reddit (r/OpenAI)",
       "url": "https://www.reddit.com/r/OpenAI/comments/1rrvrxg/",
-      "color": "#E8A84C"
+      "color": "#E8A84C",
+      "category": "Everyone's Talking",
+      "whatHappened": [
+        "A fully human-written 20-page essay flagged as AI by both Grammarly and GPTZero"
+      ],
+      "whyItMatters": [
+        "AI detection tools creating real academic consequences for false positives"
+      ],
+      "sourceQuip": "Write a 20-page essay by hand and the robots still don't believe you."
     },
     {
       "rank": 68,
@@ -1388,7 +1454,10 @@
       "top4": false,
       "source": "Reddit (r/artificial)",
       "url": "https://www.reddit.com/r/artificial/comments/1rrss36/",
-      "color": "#5CBD9A"
+      "color": "#5CBD9A",
+      "whatHappened": [
+        "Developer replaces vector retrieval with cognitive-science-inspired architecture."
+      ]
     },
     {
       "rank": 69,
@@ -1398,7 +1467,10 @@
       "top4": false,
       "source": "Reddit (r/LocalLLaMA)",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rrycc6/",
-      "color": "#5AAFE0"
+      "color": "#5AAFE0",
+      "whatHappened": [
+        "Local LLMs paired with web search via MCP. \"Pretty addictive.\""
+      ]
     },
     {
       "rank": 70,
@@ -1429,7 +1501,18 @@
       "top4": false,
       "source": "Reddit (r/LocalLLaMA)",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rrw8df/",
-      "color": "#E07858"
+      "color": "#E07858",
+      "category": "Brains",
+      "whatHappened": [
+        "Community testing shows Qwen3.5-9B is competitive for agentic coding tasks at small model size"
+      ],
+      "whyItMatters": [
+        "A 9B model doing agent work locally matters for privacy-sensitive or offline use cases"
+      ],
+      "whatsNext": [
+        "More practitioners testing it against Cursor and Claude Code workflows"
+      ],
+      "sourceQuip": "Small model, big ambitions."
     },
     {
       "rank": 72,
@@ -1478,7 +1561,10 @@
       "top4": false,
       "source": "DeepMind",
       "url": "https://deepmind.google/blog/10-years-of-alphago/",
-      "color": "#E07A8F"
+      "color": "#E07A8F",
+      "whatHappened": [
+        "DeepMind retrospective on the milestone."
+      ]
     },
     {
       "rank": 75,
@@ -1488,7 +1574,10 @@
       "top4": false,
       "source": "Reddit (r/OpenAI)",
       "url": "https://www.reddit.com/r/OpenAI/comments/1rrjt1l/",
-      "color": "#E8A84C"
+      "color": "#E8A84C",
+      "whatHappened": [
+        "Red-teaming monetized at scale for adversarial testing."
+      ]
     },
     {
       "rank": 76,
@@ -1498,7 +1587,10 @@
       "top4": false,
       "source": "Reddit (r/MachineLearning)",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1rs56wa/",
-      "color": "#5CBD9A"
+      "color": "#5CBD9A",
+      "whatHappened": [
+        "ML community frustrated with publication incentive structures."
+      ]
     }
   ],
   "welcomeLine": "Today in AI: a $50B valuation for a code editor, a $1B bet that every other AI company is wrong, some guy's autoresearch labs got wiped out by an outage, and Amazon broke its own website with mandatory AI code. Just another Wednesday.",
