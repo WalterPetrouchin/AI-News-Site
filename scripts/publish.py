@@ -176,7 +176,10 @@ def parse_full_report(text: str) -> dict:
 
             source_quip = extract_field(block, 'Source quip') or extract_field(block, 'sourceQuip')
             if source_quip:
-                entry['sourceQuip'] = source_quip
+                # Strip trailing markdown separators (---) that bleed in
+                source_quip = re.sub(r'\s*-{3,}\s*$', '', source_quip).strip()
+                if source_quip:
+                    entry['sourceQuip'] = source_quip
 
             result[norm_key] = entry
 
