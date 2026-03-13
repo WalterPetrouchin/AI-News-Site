@@ -241,16 +241,30 @@ def parse_report(md_path: Path) -> dict:
     # ── Merge Full Report body content ─────────────────────────────────────────
     full_report_data = parse_full_report(text)
 
+    unmatched = []
     for story in stories:
         norm = normalize_headline(story['headline'])
         match = full_report_data.get(norm)
 
         if not match:
-            # Fuzzy fallback: check if 60%+ of headline words appear in a key
+            # Fuzzy fallback 1: 50%+ word overlap (lowered from 60%)
             story_words = set(norm.split())
+            best_score, best_val = 0, None
             for key, val in full_report_data.items():
                 key_words = set(key.split())
-                if story_words and len(story_words & key_words) / len(story_words) >= 0.6:
+                if not story_words:
+                    continue
+                score = len(story_words & key_words) / len(story_words)
+                if score > best_score:
+                    best_score = score
+                    best_val = val
+            if best_score >= 0.5:
+                match = best_val
+
+        if not match:
+            # Fuzzy fallback 2: substring containment (either direction)
+            for key, val in full_report_data.items():
+                if norm in key or key in norm:
                     match = val
                     break
 
@@ -261,6 +275,17 @@ def parse_report(md_path: Path) -> dict:
                          'sourceQuip'):
                 if field in match:
                     story[field] = match[field]
+
+        # Guarantee: every story gets body content
+        has_body = story.get('whatHappened') or story.get('bodyParagraph1')
+        if not has_body:
+            story['whatHappened'] = [story['summary']]
+            unmatched.append(story['headline'])
+
+    if unmatched:
+        print(f"  ⚠ {len(unmatched)} stories had no Full Report match (auto-generated body from summary):")
+        for h in unmatched:
+            print(f"    - {h}")
 
     lead = stories[0]["headline"] if stories else "Today's AI Rundown"
 
