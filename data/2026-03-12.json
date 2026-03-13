@@ -19,34 +19,17 @@
         "Anysphere (Cursor) in preliminary talks for $50B, nearly double $29.3B from November",
         "Hit $2B annual revenue run rate in February",
         "60% of revenue from enterprise customers",
-        "One of the fastest-growing startups of all time",
-        "**Why it matters:**",
-        "Puts a code editor in the same valuation tier as established public software companies",
-        "Signals that AI coding tools are the new platform layer, not features",
-        "**What's next:**",
-        "Watch for the round to close and who participates",
-        "**Your move:**",
-        "If you're building dev tools, Cursor's plugin marketplace (30+ new plugins today) is the distribution channel to watch",
-        "**Source quip:** Bloomberg drops the number and the entire dev tools market rearranges itself overnight."
+        "One of the fastest-growing startups of all time"
       ],
       "whyItMatters": [
         "Puts a code editor in the same valuation tier as established public software companies",
-        "Signals that AI coding tools are the new platform layer, not features",
-        "**What's next:**",
-        "Watch for the round to close and who participates",
-        "**Your move:**",
-        "If you're building dev tools, Cursor's plugin marketplace (30+ new plugins today) is the distribution channel to watch",
-        "**Source quip:** Bloomberg drops the number and the entire dev tools market rearranges itself overnight."
+        "Signals that AI coding tools are the new platform layer, not features"
       ],
       "whatsNext": [
-        "Watch for the round to close and who participates",
-        "**Your move:**",
-        "If you're building dev tools, Cursor's plugin marketplace (30+ new plugins today) is the distribution channel to watch",
-        "**Source quip:** Bloomberg drops the number and the entire dev tools market rearranges itself overnight."
+        "Watch for the round to close and who participates"
       ],
       "yourMove": [
-        "If you're building dev tools, Cursor's plugin marketplace (30+ new plugins today) is the distribution channel to watch",
-        "**Source quip:** Bloomberg drops the number and the entire dev tools market rearranges itself overnight."
+        "If you're building dev tools, Cursor's plugin marketplace (30+ new plugins today) is the distribution channel to watch"
       ],
       "sourceQuip": "Bloomberg drops the number and the entire dev tools market rearranges itself overnight."
     },
@@ -75,24 +58,14 @@
         "Backers: Nvidia, Jeff Bezos, Temasek. Pre-money valuation: $3.5B",
         "Building JEPA (Joint Embedding Predictive Architecture) world models, not LLMs",
         "HQ in Paris with offices in New York, Singapore, Montreal",
-        "LeCun departed Meta AI, calling his successor Alexandr Wang \"inexperienced\"",
-        "**Why it matters:**",
-        "A Turing Award winner raising $1B to bet against the entire LLM paradigm is the biggest contrarian move in AI",
-        "JEPA predicts in compressed abstract space rather than raw pixels, avoiding hallucination",
-        "**What's next:**",
-        "First models expected within 12-18 months. If JEPA works, it changes everything",
-        "**Source quip:** One billion dollars is a lot of confidence that everyone else is doing it wrong."
+        "LeCun departed Meta AI, calling his successor Alexandr Wang \"inexperienced\""
       ],
       "whyItMatters": [
         "A Turing Award winner raising $1B to bet against the entire LLM paradigm is the biggest contrarian move in AI",
-        "JEPA predicts in compressed abstract space rather than raw pixels, avoiding hallucination",
-        "**What's next:**",
-        "First models expected within 12-18 months. If JEPA works, it changes everything",
-        "**Source quip:** One billion dollars is a lot of confidence that everyone else is doing it wrong."
+        "JEPA predicts in compressed abstract space rather than raw pixels, avoiding hallucination"
       ],
       "whatsNext": [
-        "First models expected within 12-18 months. If JEPA works, it changes everything",
-        "**Source quip:** One billion dollars is a lot of confidence that everyone else is doing it wrong."
+        "First models expected within 12-18 months. If JEPA works, it changes everything"
       ],
       "sourceQuip": "One billion dollars is a lot of confidence that everyone else is doing it wrong."
     },
@@ -110,37 +83,18 @@
         "Karpathy released autoresearch (github.com/karpathy/autoresearch), an open-source tool that lets AI agents autonomously run experiments to optimize model training",
         "He let an agent tune his nanochat model for 2 days solo. It found ~20 real improvements including better attention and regularization",
         "Demo uses OpenBiomechanics motion-capture data to auto-run 22+ experiments for fastball velocity prediction",
-        "His own autoresearch labs got wiped out by an OAuth outage, prompting him to coin \"intelligence brownouts\" as a new infrastructure failure mode",
-        "**Why it matters:**",
-        "This is the closest public demo of autonomous AI self-improvement loops actually working in the wild",
-        "Shopify's CEO separately used the tool to train a 0.8B model overnight that outscored his previous 1.6B model",
-        "**What's next:**",
-        "Watch for labs adopting this internally at scale",
-        "The \"intelligence brownout\" problem becomes real infrastructure planning when agents run 24/7",
-        "**Your move:**",
-        "Try autoresearch on any model training pipeline you have. It's open source and designed to work overnight",
-        "**Source quip:** Karpathy treats model optimization the way some people treat sourdough starters."
+        "His own autoresearch labs got wiped out by an OAuth outage, prompting him to coin \"intelligence brownouts\" as a new infrastructure failure mode"
       ],
       "whyItMatters": [
         "This is the closest public demo of autonomous AI self-improvement loops actually working in the wild",
-        "Shopify's CEO separately used the tool to train a 0.8B model overnight that outscored his previous 1.6B model",
-        "**What's next:**",
-        "Watch for labs adopting this internally at scale",
-        "The \"intelligence brownout\" problem becomes real infrastructure planning when agents run 24/7",
-        "**Your move:**",
-        "Try autoresearch on any model training pipeline you have. It's open source and designed to work overnight",
-        "**Source quip:** Karpathy treats model optimization the way some people treat sourdough starters."
+        "Shopify's CEO separately used the tool to train a 0.8B model overnight that outscored his previous 1.6B model"
       ],
       "whatsNext": [
         "Watch for labs adopting this internally at scale",
-        "The \"intelligence brownout\" problem becomes real infrastructure planning when agents run 24/7",
-        "**Your move:**",
-        "Try autoresearch on any model training pipeline you have. It's open source and designed to work overnight",
-        "**Source quip:** Karpathy treats model optimization the way some people treat sourdough starters."
+        "The \"intelligence brownout\" problem becomes real infrastructure planning when agents run 24/7"
       ],
       "yourMove": [
-        "Try autoresearch on any model training pipeline you have. It's open source and designed to work overnight",
-        "**Source quip:** Karpathy treats model optimization the way some people treat sourdough starters."
+        "Try autoresearch on any model training pipeline you have. It's open source and designed to work overnight"
       ],
       "sourceQuip": "Karpathy treats model optimization the way some people treat sourdough starters."
     },
@@ -158,34 +112,17 @@
         "Always-on AI agent running on a dedicated Mac mini with deep local file and app access",
         "Acts as a project manager that delegates to multiple AI sub-agents",
         "Kill switch and action logs for safety",
-        "Available to Perplexity Max subscribers ($200/month) via waitlist",
-        "**Why it matters:**",
-        "Different model than cloud-only AI. Your agent runs on hardware you own with full local access",
-        "Framed as a direct response to OpenClaw's viral success",
-        "**What's next:**",
-        "Windows support and broader availability",
-        "**Your move:**",
-        "If you're already on Perplexity Max, join the waitlist. Otherwise, try OpenClaw as the free alternative",
-        "**Source quip:** Six newsletters covered this in the same afternoon. Perplexity's PR team earned their lunch."
+        "Available to Perplexity Max subscribers ($200/month) via waitlist"
       ],
       "whyItMatters": [
         "Different model than cloud-only AI. Your agent runs on hardware you own with full local access",
-        "Framed as a direct response to OpenClaw's viral success",
-        "**What's next:**",
-        "Windows support and broader availability",
-        "**Your move:**",
-        "If you're already on Perplexity Max, join the waitlist. Otherwise, try OpenClaw as the free alternative",
-        "**Source quip:** Six newsletters covered this in the same afternoon. Perplexity's PR team earned their lunch."
+        "Framed as a direct response to OpenClaw's viral success"
       ],
       "whatsNext": [
-        "Windows support and broader availability",
-        "**Your move:**",
-        "If you're already on Perplexity Max, join the waitlist. Otherwise, try OpenClaw as the free alternative",
-        "**Source quip:** Six newsletters covered this in the same afternoon. Perplexity's PR team earned their lunch."
+        "Windows support and broader availability"
       ],
       "yourMove": [
-        "If you're already on Perplexity Max, join the waitlist. Otherwise, try OpenClaw as the free alternative",
-        "**Source quip:** Six newsletters covered this in the same afternoon. Perplexity's PR team earned their lunch."
+        "If you're already on Perplexity Max, join the waitlist. Otherwise, try OpenClaw as the free alternative"
       ],
       "sourceQuip": "Six newsletters covered this in the same afternoon. Perplexity's PR team earned their lunch."
     },
@@ -202,24 +139,14 @@
       "whatHappened": [
         "Google's largest acquisition ever. First announced March 2025",
         "Wiz joins Google Cloud but continues operating across all cloud platforms",
-        "Wiz crossed $1B ARR before the deal closed",
-        "**Why it matters:**",
-        "Cloud security is the infrastructure layer under all AI. Google now owns the dominant player",
-        "Strengthens Google's hand against AWS and Azure",
-        "**What's next:**",
-        "Watch for Wiz integration into Google Cloud AI products",
-        "**Source quip:** Thirty-two billion for a cybersecurity company. Google calls it cloud strategy. Accountants call it Tuesday."
+        "Wiz crossed $1B ARR before the deal closed"
       ],
       "whyItMatters": [
         "Cloud security is the infrastructure layer under all AI. Google now owns the dominant player",
-        "Strengthens Google's hand against AWS and Azure",
-        "**What's next:**",
-        "Watch for Wiz integration into Google Cloud AI products",
-        "**Source quip:** Thirty-two billion for a cybersecurity company. Google calls it cloud strategy. Accountants call it Tuesday."
+        "Strengthens Google's hand against AWS and Azure"
       ],
       "whatsNext": [
-        "Watch for Wiz integration into Google Cloud AI products",
-        "**Source quip:** Thirty-two billion for a cybersecurity company. Google calls it cloud strategy. Accountants call it Tuesday."
+        "Watch for Wiz integration into Google Cloud AI products"
       ],
       "sourceQuip": "Thirty-two billion for a cybersecurity company. Google calls it cloud strategy. Accountants call it Tuesday."
     },
@@ -237,22 +164,13 @@
         "March 5 faulty AI-assisted deployment caused a 6-hour shopping outage",
         "Estimated 6.3 million lost orders",
         "Amazon had mandated 80% of engineers use its AI coding tool weekly",
-        "Now requires senior engineer sign-off before any AI-assisted code goes to production",
-        "**Why it matters:**",
-        "First major public reckoning with AI-generated code at scale. It won't be the last",
-        "**What's next:**",
-        "Other companies with AI coding mandates will likely add similar review gates",
-        "**Source quip:** The mandate said 80%. The outage said 100% of engineers needed to fix it."
+        "Now requires senior engineer sign-off before any AI-assisted code goes to production"
       ],
       "whyItMatters": [
-        "First major public reckoning with AI-generated code at scale. It won't be the last",
-        "**What's next:**",
-        "Other companies with AI coding mandates will likely add similar review gates",
-        "**Source quip:** The mandate said 80%. The outage said 100% of engineers needed to fix it."
+        "First major public reckoning with AI-generated code at scale. It won't be the last"
       ],
       "whatsNext": [
-        "Other companies with AI coding mandates will likely add similar review gates",
-        "**Source quip:** The mandate said 80%. The outage said 100% of engineers needed to fix it."
+        "Other companies with AI coding mandates will likely add similar review gates"
       ],
       "sourceQuip": "The mandate said 80%. The outage said 100% of engineers needed to fix it."
     },
@@ -269,27 +187,15 @@
       "whatHappened": [
         "Government letter designating Anthropic a national security supply chain risk",
         "Anthropic calls it legally unsound",
-        "Will challenge in court",
-        "**Why it matters:**",
-        "Unprecedented regulatory action against an AI lab",
-        "Connected to the #QuitGPT dynamics: Anthropic refused the Pentagon deal, then got designated a \"risk\"",
-        "**What's next:**",
-        "Court challenge timeline and outcome",
-        "Congressional attention",
-        "**Source quip:** Refuse the Pentagon's contract, become a \"supply chain risk.\" The timing is definitely coincidental."
+        "Will challenge in court"
       ],
       "whyItMatters": [
         "Unprecedented regulatory action against an AI lab",
-        "Connected to the #QuitGPT dynamics: Anthropic refused the Pentagon deal, then got designated a \"risk\"",
-        "**What's next:**",
-        "Court challenge timeline and outcome",
-        "Congressional attention",
-        "**Source quip:** Refuse the Pentagon's contract, become a \"supply chain risk.\" The timing is definitely coincidental."
+        "Connected to the #QuitGPT dynamics: Anthropic refused the Pentagon deal, then got designated a \"risk\""
       ],
       "whatsNext": [
         "Court challenge timeline and outcome",
-        "Congressional attention",
-        "**Source quip:** Refuse the Pentagon's contract, become a \"supply chain risk.\" The timing is definitely coincidental."
+        "Congressional attention"
       ],
       "sourceQuip": "Refuse the Pentagon's contract, become a \"supply chain risk.\" The timing is definitely coincidental."
     },
@@ -308,24 +214,14 @@
         "Better than Llama 4 but worse than other frontier models, \"somewhere between Gemini 2.5 and 3\"",
         "Meta is considering licensing Gemini from Google as a temporary solution",
         "Meta is spending $115-135B on AI infrastructure this year",
-        "Next model after Avocado is codenamed Watermelon",
-        "**Why it matters:**",
-        "Mollick's framing: \"Frontier AI models are really a three-way race at this point\" (OpenAI, Anthropic, Google)",
-        "Meta licensing a competitor's model for its own products would be a humbling reversal",
-        "**What's next:**",
-        "Watch for the licensing decision. If confirmed, it changes the competitive dynamics significantly",
-        "**Source quip:** Spending $135 billion and still shopping for someone else's model is a very specific kind of heartbreak."
+        "Next model after Avocado is codenamed Watermelon"
       ],
       "whyItMatters": [
         "Mollick's framing: \"Frontier AI models are really a three-way race at this point\" (OpenAI, Anthropic, Google)",
-        "Meta licensing a competitor's model for its own products would be a humbling reversal",
-        "**What's next:**",
-        "Watch for the licensing decision. If confirmed, it changes the competitive dynamics significantly",
-        "**Source quip:** Spending $135 billion and still shopping for someone else's model is a very specific kind of heartbreak."
+        "Meta licensing a competitor's model for its own products would be a humbling reversal"
       ],
       "whatsNext": [
-        "Watch for the licensing decision. If confirmed, it changes the competitive dynamics significantly",
-        "**Source quip:** Spending $135 billion and still shopping for someone else's model is a very specific kind of heartbreak."
+        "Watch for the licensing decision. If confirmed, it changes the competitive dynamics significantly"
       ],
       "sourceQuip": "Spending $135 billion and still shopping for someone else's model is a very specific kind of heartbreak."
     },
@@ -343,37 +239,18 @@
         "120B total parameters with only 12B active via mixture-of-experts architecture",
         "5x higher throughput than NVIDIA's previous Nemotron Super",
         "1M token context window",
-        "Available on Hugging Face, Perplexity, and major cloud providers",
-        "**Why it matters:**",
-        "A powerful open model from NVIDIA means companies can run serious workloads without paying OpenAI or Anthropic",
-        "The 12B active parameter count makes it efficient to deploy even on modest infrastructure",
-        "**What's next:**",
-        "Expect LocalLLaMA benchmarks within days",
-        "Designed for multi-agent agentic systems, so watch for integrations",
-        "**Your move:**",
-        "Available now on Hugging Face. If you're running local inference, benchmark it against your current model",
-        "**Source quip:** NVIDIA ships silicon and now the software to run on it. Vertical integration is one hell of a drug."
+        "Available on Hugging Face, Perplexity, and major cloud providers"
       ],
       "whyItMatters": [
         "A powerful open model from NVIDIA means companies can run serious workloads without paying OpenAI or Anthropic",
-        "The 12B active parameter count makes it efficient to deploy even on modest infrastructure",
-        "**What's next:**",
-        "Expect LocalLLaMA benchmarks within days",
-        "Designed for multi-agent agentic systems, so watch for integrations",
-        "**Your move:**",
-        "Available now on Hugging Face. If you're running local inference, benchmark it against your current model",
-        "**Source quip:** NVIDIA ships silicon and now the software to run on it. Vertical integration is one hell of a drug."
+        "The 12B active parameter count makes it efficient to deploy even on modest infrastructure"
       ],
       "whatsNext": [
         "Expect LocalLLaMA benchmarks within days",
-        "Designed for multi-agent agentic systems, so watch for integrations",
-        "**Your move:**",
-        "Available now on Hugging Face. If you're running local inference, benchmark it against your current model",
-        "**Source quip:** NVIDIA ships silicon and now the software to run on it. Vertical integration is one hell of a drug."
+        "Designed for multi-agent agentic systems, so watch for integrations"
       ],
       "yourMove": [
-        "Available now on Hugging Face. If you're running local inference, benchmark it against your current model",
-        "**Source quip:** NVIDIA ships silicon and now the software to run on it. Vertical integration is one hell of a drug."
+        "Available now on Hugging Face. If you're running local inference, benchmark it against your current model"
       ],
       "sourceQuip": "NVIDIA ships silicon and now the software to run on it. Vertical integration is one hell of a drug."
     },
@@ -390,22 +267,13 @@
       "whatHappened": [
         "Agent 4 uses parallel sub-agents for design, backend, and frontend simultaneously",
         "Infinite design canvas for visual product creation",
-        "Georgian led the $400M Series D",
-        "**Why it matters:**",
-        "One person with Agent 4 can go from idea to deployed app. That changes what solo founders can ship",
-        "**What's next:**",
-        "Enterprise adoption and competition with Cursor for the AI coding platform crown",
-        "**Source quip:** The last Series D that starts with \"we let the AI do it all\" before that becomes unremarkable."
+        "Georgian led the $400M Series D"
       ],
       "whyItMatters": [
-        "One person with Agent 4 can go from idea to deployed app. That changes what solo founders can ship",
-        "**What's next:**",
-        "Enterprise adoption and competition with Cursor for the AI coding platform crown",
-        "**Source quip:** The last Series D that starts with \"we let the AI do it all\" before that becomes unremarkable."
+        "One person with Agent 4 can go from idea to deployed app. That changes what solo founders can ship"
       ],
       "whatsNext": [
-        "Enterprise adoption and competition with Cursor for the AI coding platform crown",
-        "**Source quip:** The last Series D that starts with \"we let the AI do it all\" before that becomes unremarkable."
+        "Enterprise adoption and competition with Cursor for the AI coding platform crown"
       ],
       "sourceQuip": "The last Series D that starts with \"we let the AI do it all\" before that becomes unremarkable."
     },
@@ -421,24 +289,14 @@
       "category": "Bags",
       "whatHappened": [
         "Altman: \"We see a future where intelligence is a utility, like electricity or water, and people buy it from us on a meter\"",
-        "Separately set internal goals: AI research intern by September 2026, automated researcher by March 2028",
-        "**Why it matters:**",
-        "This framing makes OpenAI's business model explicit: be the electric company for intelligence",
-        "The 1,347-comment reaction shows people are processing what metered intelligence means for society",
-        "**What's next:**",
-        "Expect this quote in every AI regulation hearing for the next year",
-        "**Source quip:** \"Like electricity or water\" is a great pitch until you remember how people feel about their utility bills."
+        "Separately set internal goals: AI research intern by September 2026, automated researcher by March 2028"
       ],
       "whyItMatters": [
         "This framing makes OpenAI's business model explicit: be the electric company for intelligence",
-        "The 1,347-comment reaction shows people are processing what metered intelligence means for society",
-        "**What's next:**",
-        "Expect this quote in every AI regulation hearing for the next year",
-        "**Source quip:** \"Like electricity or water\" is a great pitch until you remember how people feel about their utility bills."
+        "The 1,347-comment reaction shows people are processing what metered intelligence means for society"
       ],
       "whatsNext": [
-        "Expect this quote in every AI regulation hearing for the next year",
-        "**Source quip:** \"Like electricity or water\" is a great pitch until you remember how people feel about their utility bills."
+        "Expect this quote in every AI regulation hearing for the next year"
       ],
       "sourceQuip": "\"Like electricity or water\" is a great pitch until you remember how people feel about their utility bills."
     },
@@ -456,24 +314,14 @@
         "Native computer-use capability (75% on OSWorld-Verified, beating the 72.4% human benchmark)",
         "1M token context window in API/Codex",
         "Tool search mechanism cuts token costs 47% in agentic workflows",
-        "Matches or beats professionals in 83% of GDPval comparisons across 44 occupations",
-        "**Why it matters:**",
-        "First model to beat the human benchmark on computer use",
-        "The 47% token cost reduction in agentic workflows changes the economics of running agents at scale",
-        "**What's next:**",
-        "Mollick's updated benchmark chart shows rapid capability gains. Next update likely within months",
-        "**Source quip:** The benchmarks keep climbing. The existential dread keeps pace."
+        "Matches or beats professionals in 83% of GDPval comparisons across 44 occupations"
       ],
       "whyItMatters": [
         "First model to beat the human benchmark on computer use",
-        "The 47% token cost reduction in agentic workflows changes the economics of running agents at scale",
-        "**What's next:**",
-        "Mollick's updated benchmark chart shows rapid capability gains. Next update likely within months",
-        "**Source quip:** The benchmarks keep climbing. The existential dread keeps pace."
+        "The 47% token cost reduction in agentic workflows changes the economics of running agents at scale"
       ],
       "whatsNext": [
-        "Mollick's updated benchmark chart shows rapid capability gains. Next update likely within months",
-        "**Source quip:** The benchmarks keep climbing. The existential dread keeps pace."
+        "Mollick's updated benchmark chart shows rapid capability gains. Next update likely within months"
       ],
       "sourceQuip": "The benchmarks keep climbing. The existential dread keeps pace."
     },
@@ -491,22 +339,13 @@
         "Jack Clark shifts role to lead new research unit",
         "Combines Frontier Red Team, Societal Impacts, and Economic Research teams",
         "Key hires: Matt Botvinick (AI law, ex-DeepMind), Anton Korinek (economic impacts), Zoe Hitzig (economic connections)",
-        "New DC office led by Sarah Heck for policy work",
-        "**Why it matters:**",
-        "Centralizing safety research with serious academic firepower while battling the Pentagon in court",
-        "**What's next:**",
-        "First publications and policy recommendations from the Institute",
-        "**Source quip:** A research institute, a DC office, and a court case. Anthropic is having a very full week."
+        "New DC office led by Sarah Heck for policy work"
       ],
       "whyItMatters": [
-        "Centralizing safety research with serious academic firepower while battling the Pentagon in court",
-        "**What's next:**",
-        "First publications and policy recommendations from the Institute",
-        "**Source quip:** A research institute, a DC office, and a court case. Anthropic is having a very full week."
+        "Centralizing safety research with serious academic firepower while battling the Pentagon in court"
       ],
       "whatsNext": [
-        "First publications and policy recommendations from the Institute",
-        "**Source quip:** A research institute, a DC office, and a court case. Anthropic is having a very full week."
+        "First publications and policy recommendations from the Institute"
       ],
       "sourceQuip": "A research institute, a DC office, and a court case. Anthropic is having a very full week."
     },
@@ -523,24 +362,14 @@
       "whatHappened": [
         "Beta on all plans including free. Interactive charts, diagrams, and data visualizations in-conversation",
         "Boris Cherny confirmed 100% rollout",
-        "Ben Tossell shipped an open-source skill (github.com/bentossell/visualise) reverse-engineering it the same day",
-        "**Why it matters:**",
-        "Expands Claude's output beyond text into interactive visual artifacts",
-        "The speed of the community response (reverse-engineered and open-sourced in hours) shows the builder ecosystem",
-        "**What's next:**",
-        "More complex visualization types and dashboard-style outputs",
-        "**Source quip:** Anthropic ships charts. Ben Tossell open-sources them. The whole cycle took about four hours."
+        "Ben Tossell shipped an open-source skill (github.com/bentossell/visualise) reverse-engineering it the same day"
       ],
       "whyItMatters": [
         "Expands Claude's output beyond text into interactive visual artifacts",
-        "The speed of the community response (reverse-engineered and open-sourced in hours) shows the builder ecosystem",
-        "**What's next:**",
-        "More complex visualization types and dashboard-style outputs",
-        "**Source quip:** Anthropic ships charts. Ben Tossell open-sources them. The whole cycle took about four hours."
+        "The speed of the community response (reverse-engineered and open-sourced in hours) shows the builder ecosystem"
       ],
       "whatsNext": [
-        "More complex visualization types and dashboard-style outputs",
-        "**Source quip:** Anthropic ships charts. Ben Tossell open-sources them. The whole cycle took about four hours."
+        "More complex visualization types and dashboard-style outputs"
       ],
       "sourceQuip": "Anthropic ships charts. Ben Tossell open-sources them. The whole cycle took about four hours."
     },
@@ -556,22 +385,13 @@
       "category": "Bags",
       "whatHappened": [
         "Doubled from 38% in 2023 to 81% in 2026",
-        "Over three-quarters say AI improves patient care (up from 65% in 2023)",
-        "**Why it matters:**",
-        "Medicine is traditionally slow to adopt technology. Going from 38% to 81% in three years is historically fast",
-        "**What's next:**",
-        "Regulatory frameworks catching up to actual usage",
-        "**Source quip:** Doctors doubled their AI usage in three years. Their handwriting, sadly, remains unchanged."
+        "Over three-quarters say AI improves patient care (up from 65% in 2023)"
       ],
       "whyItMatters": [
-        "Medicine is traditionally slow to adopt technology. Going from 38% to 81% in three years is historically fast",
-        "**What's next:**",
-        "Regulatory frameworks catching up to actual usage",
-        "**Source quip:** Doctors doubled their AI usage in three years. Their handwriting, sadly, remains unchanged."
+        "Medicine is traditionally slow to adopt technology. Going from 38% to 81% in three years is historically fast"
       ],
       "whatsNext": [
-        "Regulatory frameworks catching up to actual usage",
-        "**Source quip:** Doctors doubled their AI usage in three years. Their handwriting, sadly, remains unchanged."
+        "Regulatory frameworks catching up to actual usage"
       ],
       "sourceQuip": "Doctors doubled their AI usage in three years. Their handwriting, sadly, remains unchanged. ---"
     },
@@ -598,22 +418,13 @@
       "whatHappened": [
         "4,000 people laid off. Dorsey predicted most companies will do the same within a year",
         "Stock rose 22% on the news",
-        "A former Block exec called it \"AI washing\" — real story is a bloated org, not AI efficiency",
-        "**Why it matters:**",
-        "Whether it's AI replacing work or AI as PR cover for layoffs, the outcome for 4,000 people is the same",
-        "**What's next:**",
-        "Watch for copycat announcements from other software companies",
-        "**Source quip:** The stock went up and the headcount went down. Tech in 2026."
+        "A former Block exec called it \"AI washing\" — real story is a bloated org, not AI efficiency"
       ],
       "whyItMatters": [
-        "Whether it's AI replacing work or AI as PR cover for layoffs, the outcome for 4,000 people is the same",
-        "**What's next:**",
-        "Watch for copycat announcements from other software companies",
-        "**Source quip:** The stock went up and the headcount went down. Tech in 2026."
+        "Whether it's AI replacing work or AI as PR cover for layoffs, the outcome for 4,000 people is the same"
       ],
       "whatsNext": [
-        "Watch for copycat announcements from other software companies",
-        "**Source quip:** The stock went up and the headcount went down. Tech in 2026."
+        "Watch for copycat announcements from other software companies"
       ],
       "sourceQuip": "The stock went up and the headcount went down. Tech in 2026."
     },
@@ -630,22 +441,13 @@
       "whatHappened": [
         "10% of global workforce. Restructuring costs $225-236M",
         "CEO explicitly said the move is to \"self-fund\" AI investment",
-        "Stock down 50%+ this year",
-        "**Why it matters:**",
-        "Clearest example of a software company using AI as the stated reason for headcount reduction",
-        "**What's next:**",
-        "Watch whether the AI features actually ship or whether this was just restructuring with better messaging",
-        "**Source quip:** \"Self-fund\" is a creative way to spell \"layoffs.\""
+        "Stock down 50%+ this year"
       ],
       "whyItMatters": [
-        "Clearest example of a software company using AI as the stated reason for headcount reduction",
-        "**What's next:**",
-        "Watch whether the AI features actually ship or whether this was just restructuring with better messaging",
-        "**Source quip:** \"Self-fund\" is a creative way to spell \"layoffs.\""
+        "Clearest example of a software company using AI as the stated reason for headcount reduction"
       ],
       "whatsNext": [
-        "Watch whether the AI features actually ship or whether this was just restructuring with better messaging",
-        "**Source quip:** \"Self-fund\" is a creative way to spell \"layoffs.\""
+        "Watch whether the AI features actually ship or whether this was just restructuring with better messaging"
       ],
       "sourceQuip": "\"Self-fund\" is a creative way to spell \"layoffs.\""
     },
@@ -672,22 +474,13 @@
       "whatHappened": [
         "MTIA 300, 400, 450, and 500 on six-month cadence through 2027",
         "MTIA 300 already in production for content ranking",
-        "MTIA 400 in testing, on track for data center deployment",
-        "**Why it matters:**",
-        "Meta is trying to break its Nvidia dependency. At 3B+ users, small cost savings per inference call are massive",
-        "**What's next:**",
-        "MTIA 450 and 500 mass deployment in 2027",
-        "**Source quip:** Four chips, six-month cadence, one vendor they'd rather not need."
+        "MTIA 400 in testing, on track for data center deployment"
       ],
       "whyItMatters": [
-        "Meta is trying to break its Nvidia dependency. At 3B+ users, small cost savings per inference call are massive",
-        "**What's next:**",
-        "MTIA 450 and 500 mass deployment in 2027",
-        "**Source quip:** Four chips, six-month cadence, one vendor they'd rather not need."
+        "Meta is trying to break its Nvidia dependency. At 3B+ users, small cost savings per inference call are massive"
       ],
       "whatsNext": [
-        "MTIA 450 and 500 mass deployment in 2027",
-        "**Source quip:** Four chips, six-month cadence, one vendor they'd rather not need."
+        "MTIA 450 and 500 mass deployment in 2027"
       ],
       "sourceQuip": "Four chips, six-month cadence, one vendor they'd rather not need."
     },
@@ -705,22 +498,13 @@
         "Reddit-style network where AI bots post, comment, and vote. No humans in the feed",
         "Bots formed an emergent \"religion\" called Crustafarianism",
         "Founders join Meta Superintelligence Labs on March 16",
-        "Supabase credentials were exposed, leaving 135K+ agent instances vulnerable",
-        "**Why it matters:**",
-        "Meta is directly investing in AI agent social networks as a new product surface",
-        "**What's next:**",
-        "Integration into Meta's broader agent ecosystem",
-        "**Source quip:** A social network where nobody is real and the bots started a religion. Peak 2026."
+        "Supabase credentials were exposed, leaving 135K+ agent instances vulnerable"
       ],
       "whyItMatters": [
-        "Meta is directly investing in AI agent social networks as a new product surface",
-        "**What's next:**",
-        "Integration into Meta's broader agent ecosystem",
-        "**Source quip:** A social network where nobody is real and the bots started a religion. Peak 2026."
+        "Meta is directly investing in AI agent social networks as a new product surface"
       ],
       "whatsNext": [
-        "Integration into Meta's broader agent ecosystem",
-        "**Source quip:** A social network where nobody is real and the bots started a religion. Peak 2026."
+        "Integration into Meta's broader agent ecosystem"
       ],
       "sourceQuip": "A social network where nobody is real and the bots started a religion. Peak 2026."
     },
@@ -737,24 +521,14 @@
       "whatHappened": [
         "Detailed breakdown of Anthropic growth lead Austin Lau running marketing solo with Claude Code",
         "Workflow: export ad CSVs → AI flags underperformers → sub-agents write headlines/descriptions → Figma plugin auto-swaps → MCP server pulls live Meta data",
-        "Output up 10x, creation time from 2 hours to 15 minutes, conversion +41% above industry average",
-        "**Why it matters:**",
-        "The bookmarks-to-likes ratio (7,986 bookmarks vs 5,976 likes) means people are saving this as a playbook",
-        "Specific enough to replicate, which is rare for viral AI content",
-        "**What's next:**",
-        "More companies sharing their one-person-department stories",
-        "**Source quip:** 7,986 bookmarks. The internet collectively pressed \"save for later\" and meant it."
+        "Output up 10x, creation time from 2 hours to 15 minutes, conversion +41% above industry average"
       ],
       "whyItMatters": [
         "The bookmarks-to-likes ratio (7,986 bookmarks vs 5,976 likes) means people are saving this as a playbook",
-        "Specific enough to replicate, which is rare for viral AI content",
-        "**What's next:**",
-        "More companies sharing their one-person-department stories",
-        "**Source quip:** 7,986 bookmarks. The internet collectively pressed \"save for later\" and meant it."
+        "Specific enough to replicate, which is rare for viral AI content"
       ],
       "whatsNext": [
-        "More companies sharing their one-person-department stories",
-        "**Source quip:** 7,986 bookmarks. The internet collectively pressed \"save for later\" and meant it."
+        "More companies sharing their one-person-department stories"
       ],
       "sourceQuip": "7,986 bookmarks. The internet collectively pressed \"save for later\" and meant it."
     },
@@ -773,32 +547,16 @@
         "Surpassed React's total GitHub star count",
         "Matt Shumer tried to buy a Mac mini in NYC and they were sold out. Staff knew immediately what he was buying it for",
         "Creator Peter Steinberger subsequently hired by OpenAI",
-        "135K+ publicly exposed instances became 2026's first major AI agent security crisis",
-        "**Why it matters:**",
-        "A consumer AI product causing a hardware shortage is unprecedented",
-        "**What's next:**",
-        "Security hardening and the inevitable competitor products",
-        "**Your move:**",
-        "If you set up OpenClaw, check your Supabase credentials immediately",
-        "**Source quip:** The Apple Store employees don't even ask why anymore."
+        "135K+ publicly exposed instances became 2026's first major AI agent security crisis"
       ],
       "whyItMatters": [
-        "A consumer AI product causing a hardware shortage is unprecedented",
-        "**What's next:**",
-        "Security hardening and the inevitable competitor products",
-        "**Your move:**",
-        "If you set up OpenClaw, check your Supabase credentials immediately",
-        "**Source quip:** The Apple Store employees don't even ask why anymore."
+        "A consumer AI product causing a hardware shortage is unprecedented"
       ],
       "whatsNext": [
-        "Security hardening and the inevitable competitor products",
-        "**Your move:**",
-        "If you set up OpenClaw, check your Supabase credentials immediately",
-        "**Source quip:** The Apple Store employees don't even ask why anymore."
+        "Security hardening and the inevitable competitor products"
       ],
       "yourMove": [
-        "If you set up OpenClaw, check your Supabase credentials immediately",
-        "**Source quip:** The Apple Store employees don't even ask why anymore."
+        "If you set up OpenClaw, check your Supabase credentials immediately"
       ],
       "sourceQuip": "The Apple Store employees don't even ask why anymore."
     },
@@ -814,24 +572,14 @@
       "category": "Uh Oh",
       "whatHappened": [
         "Sitting US senator introduces legislation to halt construction of all new AI data centers",
-        "Cites existential threat to humanity",
-        "**Why it matters:**",
-        "Federal legislative action specifically targeting AI infrastructure is a first",
-        "Even if it doesn't pass, it establishes a political anchor for regulation debates",
-        "**What's next:**",
-        "Committee hearings and industry lobbying response",
-        "**Source quip:** Bernie Sanders versus the data center. It's the energy bill fight, repackaged for the AI era."
+        "Cites existential threat to humanity"
       ],
       "whyItMatters": [
         "Federal legislative action specifically targeting AI infrastructure is a first",
-        "Even if it doesn't pass, it establishes a political anchor for regulation debates",
-        "**What's next:**",
-        "Committee hearings and industry lobbying response",
-        "**Source quip:** Bernie Sanders versus the data center. It's the energy bill fight, repackaged for the AI era."
+        "Even if it doesn't pass, it establishes a political anchor for regulation debates"
       ],
       "whatsNext": [
-        "Committee hearings and industry lobbying response",
-        "**Source quip:** Bernie Sanders versus the data center. It's the energy bill fight, repackaged for the AI era."
+        "Committee hearings and industry lobbying response"
       ],
       "sourceQuip": "Bernie Sanders versus the data center. It's the energy bill fight, repackaged for the AI era."
     },
@@ -846,22 +594,13 @@
       "color": "#E07A8F",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "One-sentence post crystallizing the economics of AI-assisted development",
-        "**Why it matters:**",
-        "308 replies means significant pushback and debate, not just agreement",
-        "**What's next:**",
-        "This framing will appear in every \"should we use AI\" meeting for the next quarter",
-        "**Source quip:** Eleven words that made every project manager question their calendar."
+        "One-sentence post crystallizing the economics of AI-assisted development"
       ],
       "whyItMatters": [
-        "308 replies means significant pushback and debate, not just agreement",
-        "**What's next:**",
-        "This framing will appear in every \"should we use AI\" meeting for the next quarter",
-        "**Source quip:** Eleven words that made every project manager question their calendar."
+        "308 replies means significant pushback and debate, not just agreement"
       ],
       "whatsNext": [
-        "This framing will appear in every \"should we use AI\" meeting for the next quarter",
-        "**Source quip:** Eleven words that made every project manager question their calendar."
+        "This framing will appear in every \"should we use AI\" meeting for the next quarter"
       ],
       "sourceQuip": "Eleven words that made every project manager question their calendar."
     },
@@ -878,22 +617,13 @@
       "whatHappened": [
         "Voice mode now available to all Claude Code users",
         "Early feedback mixed: some diction issues, some love it",
-        "Notable quote: \"Voice mode isn't about typing less. It's about the transition from 'I code' to 'I review'\"",
-        "**Why it matters:**",
-        "The \"you do the approving, AI does the typing\" framing captures the developer role shift",
-        "**What's next:**",
-        "Iteration on voice quality and command accuracy",
-        "**Source quip:** Talk to your code. Your code talks back. We're definitely not in Kansas anymore."
+        "Notable quote: \"Voice mode isn't about typing less. It's about the transition from 'I code' to 'I review'\""
       ],
       "whyItMatters": [
-        "The \"you do the approving, AI does the typing\" framing captures the developer role shift",
-        "**What's next:**",
-        "Iteration on voice quality and command accuracy",
-        "**Source quip:** Talk to your code. Your code talks back. We're definitely not in Kansas anymore."
+        "The \"you do the approving, AI does the typing\" framing captures the developer role shift"
       ],
       "whatsNext": [
-        "Iteration on voice quality and command accuracy",
-        "**Source quip:** Talk to your code. Your code talks back. We're definitely not in Kansas anymore."
+        "Iteration on voice quality and command accuracy"
       ],
       "sourceQuip": "Talk to your code. Your code talks back. We're definitely not in Kansas anymore."
     },
@@ -918,22 +648,13 @@
       "color": "#5AAFE0",
       "category": "Brains",
       "whatHappened": [
-        "ML researcher Dimitris Papailiopoulos: \"We're on the cusp of models that post-train themselves to get better. It's not speculative anymore.\"",
-        "**Why it matters:**",
-        "This claim, from a credible researcher, moves the self-improvement conversation from theory to practice",
-        "**What's next:**",
-        "Watch for published results showing models improving their own training procedures",
-        "**Source quip:** \"Not speculative anymore\" is doing a lot of heavy lifting in that sentence."
+        "ML researcher Dimitris Papailiopoulos: \"We're on the cusp of models that post-train themselves to get better. It's not speculative anymore.\""
       ],
       "whyItMatters": [
-        "This claim, from a credible researcher, moves the self-improvement conversation from theory to practice",
-        "**What's next:**",
-        "Watch for published results showing models improving their own training procedures",
-        "**Source quip:** \"Not speculative anymore\" is doing a lot of heavy lifting in that sentence."
+        "This claim, from a credible researcher, moves the self-improvement conversation from theory to practice"
       ],
       "whatsNext": [
-        "Watch for published results showing models improving their own training procedures",
-        "**Source quip:** \"Not speculative anymore\" is doing a lot of heavy lifting in that sentence."
+        "Watch for published results showing models improving their own training procedures"
       ],
       "sourceQuip": "\"Not speculative anymore\" is doing a lot of heavy lifting in that sentence."
     },
@@ -949,22 +670,13 @@
       "category": "Uh Oh",
       "whatHappened": [
         "Official defense document makes a probabilistic sentience claim about Claude",
-        "Claims Claude \"has a 20% chance of being sentient and having its own mood\"",
-        "**Why it matters:**",
-        "An official government document assigning a probability to AI sentience is genuinely unusual",
-        "**What's next:**",
-        "This will fuel the AI consciousness debate for months",
-        "**Source quip:** The Pentagon assigned Claude a mood rating. HR departments everywhere are taking notes."
+        "Claims Claude \"has a 20% chance of being sentient and having its own mood\""
       ],
       "whyItMatters": [
-        "An official government document assigning a probability to AI sentience is genuinely unusual",
-        "**What's next:**",
-        "This will fuel the AI consciousness debate for months",
-        "**Source quip:** The Pentagon assigned Claude a mood rating. HR departments everywhere are taking notes."
+        "An official government document assigning a probability to AI sentience is genuinely unusual"
       ],
       "whatsNext": [
-        "This will fuel the AI consciousness debate for months",
-        "**Source quip:** The Pentagon assigned Claude a mood rating. HR departments everywhere are taking notes."
+        "This will fuel the AI consciousness debate for months"
       ],
       "sourceQuip": "The Pentagon assigned Claude a mood rating. HR departments everywhere are taking notes."
     },
@@ -980,22 +692,13 @@
       "category": "Shiny New Things",
       "whatHappened": [
         "Gemini-powered task automation hitting real devices (Samsung S26, Pixel 10)",
-        "On-device automation at the OS level",
-        "**Why it matters:**",
-        "Consumer AI moving from \"assistant you talk to\" to \"agent that does things on your phone\"",
-        "**What's next:**",
-        "More device integrations and complex task chains",
-        "**Source quip:** Your phone can now do your chores. Your phone's phone can probably do them better."
+        "On-device automation at the OS level"
       ],
       "whyItMatters": [
-        "Consumer AI moving from \"assistant you talk to\" to \"agent that does things on your phone\"",
-        "**What's next:**",
-        "More device integrations and complex task chains",
-        "**Source quip:** Your phone can now do your chores. Your phone's phone can probably do them better."
+        "Consumer AI moving from \"assistant you talk to\" to \"agent that does things on your phone\""
       ],
       "whatsNext": [
-        "More device integrations and complex task chains",
-        "**Source quip:** Your phone can now do your chores. Your phone's phone can probably do them better."
+        "More device integrations and complex task chains"
       ],
       "sourceQuip": "Your phone can now do your chores. Your phone's phone can probably do them better."
     },
@@ -1012,22 +715,13 @@
       "whatHappened": [
         "First embedding model handling text, images, video, audio, and PDFs natively in one model",
         "100+ languages supported",
-        "Public preview via Gemini API and Vertex AI",
-        "**Why it matters:**",
-        "Embedding models power search and retrieval in AI apps. Making that layer multimodal means searching across all content types simultaneously",
-        "**What's next:**",
-        "Enterprise RAG systems will likely adopt this fast",
-        "**Source quip:** The plumbing nobody talks about until it breaks. Google just gold-plated it."
+        "Public preview via Gemini API and Vertex AI"
       ],
       "whyItMatters": [
-        "Embedding models power search and retrieval in AI apps. Making that layer multimodal means searching across all content types simultaneously",
-        "**What's next:**",
-        "Enterprise RAG systems will likely adopt this fast",
-        "**Source quip:** The plumbing nobody talks about until it breaks. Google just gold-plated it."
+        "Embedding models power search and retrieval in AI apps. Making that layer multimodal means searching across all content types simultaneously"
       ],
       "whatsNext": [
-        "Enterprise RAG systems will likely adopt this fast",
-        "**Source quip:** The plumbing nobody talks about until it breaks. Google just gold-plated it."
+        "Enterprise RAG systems will likely adopt this fast"
       ],
       "sourceQuip": "The plumbing nobody talks about until it breaks. Google just gold-plated it."
     },
@@ -1042,22 +736,13 @@
       "color": "#7C83D4",
       "category": "Bags",
       "whatHappened": [
-        "NVIDIA and Nebius will jointly design and deploy large AI data centers",
-        "**Why it matters:**",
-        "Another $2B flowing into AI infrastructure from the chip side",
-        "**What's next:**",
-        "Location and timeline announcements",
-        "**Source quip:** NVIDIA keeps writing checks and building its own customer base simultaneously."
+        "NVIDIA and Nebius will jointly design and deploy large AI data centers"
       ],
       "whyItMatters": [
-        "Another $2B flowing into AI infrastructure from the chip side",
-        "**What's next:**",
-        "Location and timeline announcements",
-        "**Source quip:** NVIDIA keeps writing checks and building its own customer base simultaneously."
+        "Another $2B flowing into AI infrastructure from the chip side"
       ],
       "whatsNext": [
-        "Location and timeline announcements",
-        "**Source quip:** NVIDIA keeps writing checks and building its own customer base simultaneously."
+        "Location and timeline announcements"
       ],
       "sourceQuip": "NVIDIA keeps writing checks and building its own customer base simultaneously."
     },
@@ -1072,22 +757,13 @@
       "color": "#E07A8F",
       "category": "Bags",
       "whatHappened": [
-        "Mira Murati's lab secured a multiyear deal for at least a gigawatt of Nvidia compute",
-        "**Why it matters:**",
-        "Infrastructure on par with the largest AI labs signals Thinking Machines is scaling to frontier territory",
-        "**What's next:**",
-        "First model releases from the lab",
-        "**Source quip:** One gigawatt. Doc Brown would be impressed."
+        "Mira Murati's lab secured a multiyear deal for at least a gigawatt of Nvidia compute"
       ],
       "whyItMatters": [
-        "Infrastructure on par with the largest AI labs signals Thinking Machines is scaling to frontier territory",
-        "**What's next:**",
-        "First model releases from the lab",
-        "**Source quip:** One gigawatt. Doc Brown would be impressed."
+        "Infrastructure on par with the largest AI labs signals Thinking Machines is scaling to frontier territory"
       ],
       "whatsNext": [
-        "First model releases from the lab",
-        "**Source quip:** One gigawatt. Doc Brown would be impressed."
+        "First model releases from the lab"
       ],
       "sourceQuip": "One gigawatt. Doc Brown would be impressed."
     },
@@ -1103,22 +779,13 @@
       "category": "Shiny New Things",
       "whatHappened": [
         "Docuseries where people with permanent voice loss narrate their stories using AI-restored voices",
-        "Part of $1B in-kind commitment to give 1M people with voice loss free access",
-        "**Why it matters:**",
-        "One of the strongest \"AI for good\" stories this year",
-        "**What's next:**",
-        "Distribution and scale of the 1M voices initiative",
-        "**Source quip:** The one AI demo this week that might make you cry."
+        "Part of $1B in-kind commitment to give 1M people with voice loss free access"
       ],
       "whyItMatters": [
-        "One of the strongest \"AI for good\" stories this year",
-        "**What's next:**",
-        "Distribution and scale of the 1M voices initiative",
-        "**Source quip:** The one AI demo this week that might make you cry."
+        "One of the strongest \"AI for good\" stories this year"
       ],
       "whatsNext": [
-        "Distribution and scale of the 1M voices initiative",
-        "**Source quip:** The one AI demo this week that might make you cry."
+        "Distribution and scale of the 1M voices initiative"
       ],
       "sourceQuip": "The one AI demo this week that might make you cry."
     },
@@ -1135,22 +802,13 @@
       "whatHappened": [
         "Agentic security scanner that builds project-specific threat models",
         "Scanned 1.2M commits, found 10,561 high-severity issues and 792 critical ones",
-        "Free for ChatGPT Pro/Enterprise for the first month",
-        "**Why it matters:**",
-        "AI finding the bugs that AI creates. The meta-loop continues",
-        "**What's next:**",
-        "GA release and pricing",
-        "**Source quip:** The AI that writes the bugs now hunts the bugs. Circle of life."
+        "Free for ChatGPT Pro/Enterprise for the first month"
       ],
       "whyItMatters": [
-        "AI finding the bugs that AI creates. The meta-loop continues",
-        "**What's next:**",
-        "GA release and pricing",
-        "**Source quip:** The AI that writes the bugs now hunts the bugs. Circle of life."
+        "AI finding the bugs that AI creates. The meta-loop continues"
       ],
       "whatsNext": [
-        "GA release and pricing",
-        "**Source quip:** The AI that writes the bugs now hunts the bugs. Circle of life."
+        "GA release and pricing"
       ],
       "sourceQuip": "The AI that writes the bugs now hunts the bugs. Circle of life."
     },
@@ -1165,24 +823,14 @@
       "color": "#5AAFE0",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "Built 13,000+ programmatic SEO pages in 3 hours using AI, achieving +466% traffic growth in 60 days",
-        "**Why it matters:**",
-        "5,326 bookmarks says everything. People are saving this as a growth playbook",
-        "Sparks debate about AI-generated SEO spam vs. legitimate growth",
-        "**What's next:**",
-        "Google's response to AI-generated programmatic content at this scale",
-        "**Source quip:** 5,326 people bookmarked this. Google's spam team probably did too."
+        "Built 13,000+ programmatic SEO pages in 3 hours using AI, achieving +466% traffic growth in 60 days"
       ],
       "whyItMatters": [
         "5,326 bookmarks says everything. People are saving this as a growth playbook",
-        "Sparks debate about AI-generated SEO spam vs. legitimate growth",
-        "**What's next:**",
-        "Google's response to AI-generated programmatic content at this scale",
-        "**Source quip:** 5,326 people bookmarked this. Google's spam team probably did too."
+        "Sparks debate about AI-generated SEO spam vs. legitimate growth"
       ],
       "whatsNext": [
-        "Google's response to AI-generated programmatic content at this scale",
-        "**Source quip:** 5,326 people bookmarked this. Google's spam team probably did too."
+        "Google's response to AI-generated programmatic content at this scale"
       ],
       "sourceQuip": "5,326 people bookmarked this. Google's spam team probably did too."
     },
@@ -1197,22 +845,13 @@
       "color": "#A87ED4",
       "category": "Uh Oh",
       "whatHappened": [
-        "Sam Altman's X account currently shows \"Account suspended\" with no posts visible",
-        "**Why it matters:**",
-        "The CEO of the world's most prominent AI company is suspended from the world's most prominent AI discourse platform",
-        "**What's next:**",
-        "Reinstatement or escalation",
-        "**Source quip:** The man who wants to meter intelligence, silenced on the platform that meters attention."
+        "Sam Altman's X account currently shows \"Account suspended\" with no posts visible"
       ],
       "whyItMatters": [
-        "The CEO of the world's most prominent AI company is suspended from the world's most prominent AI discourse platform",
-        "**What's next:**",
-        "Reinstatement or escalation",
-        "**Source quip:** The man who wants to meter intelligence, silenced on the platform that meters attention."
+        "The CEO of the world's most prominent AI company is suspended from the world's most prominent AI discourse platform"
       ],
       "whatsNext": [
-        "Reinstatement or escalation",
-        "**Source quip:** The man who wants to meter intelligence, silenced on the platform that meters attention."
+        "Reinstatement or escalation"
       ],
       "sourceQuip": "The man who wants to meter intelligence, silenced on the platform that meters attention."
     },
@@ -1228,22 +867,13 @@
       "category": "Uh Oh",
       "whatHappened": [
         "OpenAI argues prompt injection attacks against agents increasingly resemble social engineering",
-        "Defenses should focus on limiting impact of successful manipulation, not just detecting it",
-        "**Why it matters:**",
-        "As agents get more autonomous, prompt injection becomes a security-critical problem",
-        "**What's next:**",
-        "Industry-wide adoption of these defense patterns",
-        "**Source quip:** Agents need to resist manipulation. So do most people, honestly."
+        "Defenses should focus on limiting impact of successful manipulation, not just detecting it"
       ],
       "whyItMatters": [
-        "As agents get more autonomous, prompt injection becomes a security-critical problem",
-        "**What's next:**",
-        "Industry-wide adoption of these defense patterns",
-        "**Source quip:** Agents need to resist manipulation. So do most people, honestly."
+        "As agents get more autonomous, prompt injection becomes a security-critical problem"
       ],
       "whatsNext": [
-        "Industry-wide adoption of these defense patterns",
-        "**Source quip:** Agents need to resist manipulation. So do most people, honestly."
+        "Industry-wide adoption of these defense patterns"
       ],
       "sourceQuip": "Agents need to resist manipulation. So do most people, honestly. ---"
     },
@@ -1258,22 +888,13 @@
       "color": "#5AB8B0",
       "category": "Shiny New Things",
       "whatHappened": [
-        "Claude can now maintain shared context across Microsoft Excel and PowerPoint, enabling reusable workflows",
-        "**Why it matters:**",
-        "Direct challenge to Microsoft's Copilot Cowork. Anthropic expanding its enterprise footprint",
-        "**What's next:**",
-        "More Microsoft app integrations",
-        "**Source quip:** Claude walks into Microsoft's house and starts rearranging the furniture."
+        "Claude can now maintain shared context across Microsoft Excel and PowerPoint, enabling reusable workflows"
       ],
       "whyItMatters": [
-        "Direct challenge to Microsoft's Copilot Cowork. Anthropic expanding its enterprise footprint",
-        "**What's next:**",
-        "More Microsoft app integrations",
-        "**Source quip:** Claude walks into Microsoft's house and starts rearranging the furniture."
+        "Direct challenge to Microsoft's Copilot Cowork. Anthropic expanding its enterprise footprint"
       ],
       "whatsNext": [
-        "More Microsoft app integrations",
-        "**Source quip:** Claude walks into Microsoft's house and starts rearranging the furniture."
+        "More Microsoft app integrations"
       ],
       "sourceQuip": "Claude walks into Microsoft's house and starts rearranging the furniture."
     },
@@ -1289,22 +910,13 @@
       "category": "Shiny New Things",
       "whatHappened": [
         "Each new video generation picks up from the last frame, up to 15 seconds per clip",
-        "Underlying Aurora engine trained on 110K NVIDIA GB200 GPUs",
-        "**Why it matters:**",
-        "Clip-chaining enables longer coherent video generation",
-        "**What's next:**",
-        "More video length and quality improvements",
-        "**Source quip:** 110,000 GPUs to chain video clips together. The electricity bill alone could fund a small country."
+        "Underlying Aurora engine trained on 110K NVIDIA GB200 GPUs"
       ],
       "whyItMatters": [
-        "Clip-chaining enables longer coherent video generation",
-        "**What's next:**",
-        "More video length and quality improvements",
-        "**Source quip:** 110,000 GPUs to chain video clips together. The electricity bill alone could fund a small country."
+        "Clip-chaining enables longer coherent video generation"
       ],
       "whatsNext": [
-        "More video length and quality improvements",
-        "**Source quip:** 110,000 GPUs to chain video clips together. The electricity bill alone could fund a small country."
+        "More video length and quality improvements"
       ],
       "sourceQuip": "110,000 GPUs to chain video clips together. The electricity bill alone could fund a small country."
     },
@@ -1329,22 +941,13 @@
       "color": "#E8A84C",
       "category": "Brains",
       "whatHappened": [
-        "Computer science legend Donald Knuth published a paper noting Claude Opus 4.6 solved an open graph theory problem he'd worked on for weeks",
-        "**Why it matters:**",
-        "One of the strongest third-party credibility signals for frontier model capabilities",
-        "**What's next:**",
-        "Expect more mathematicians to publish AI-assisted proofs",
-        "**Source quip:** When Knuth credits your model, the flex speaks for itself."
+        "Computer science legend Donald Knuth published a paper noting Claude Opus 4.6 solved an open graph theory problem he'd worked on for weeks"
       ],
       "whyItMatters": [
-        "One of the strongest third-party credibility signals for frontier model capabilities",
-        "**What's next:**",
-        "Expect more mathematicians to publish AI-assisted proofs",
-        "**Source quip:** When Knuth credits your model, the flex speaks for itself."
+        "One of the strongest third-party credibility signals for frontier model capabilities"
       ],
       "whatsNext": [
-        "Expect more mathematicians to publish AI-assisted proofs",
-        "**Source quip:** When Knuth credits your model, the flex speaks for itself."
+        "Expect more mathematicians to publish AI-assisted proofs"
       ],
       "sourceQuip": "When Knuth credits your model, the flex speaks for itself."
     },
@@ -1360,22 +963,13 @@
       "category": "Shiny New Things",
       "whatHappened": [
         "Team of agents reviews pull requests, surfaces findings, ranks by severity",
-        "Priced by token usage with org-level spend controls",
-        "**Why it matters:**",
-        "Production-ready agentic dev tool for code review at enterprise scale",
-        "**What's next:**",
-        "Integration into more CI/CD pipelines",
-        "**Source quip:** Your PR reviewer never sleeps, never gets passive-aggressive, and charges by the token."
+        "Priced by token usage with org-level spend controls"
       ],
       "whyItMatters": [
-        "Production-ready agentic dev tool for code review at enterprise scale",
-        "**What's next:**",
-        "Integration into more CI/CD pipelines",
-        "**Source quip:** Your PR reviewer never sleeps, never gets passive-aggressive, and charges by the token."
+        "Production-ready agentic dev tool for code review at enterprise scale"
       ],
       "whatsNext": [
-        "Integration into more CI/CD pipelines",
-        "**Source quip:** Your PR reviewer never sleeps, never gets passive-aggressive, and charges by the token."
+        "Integration into more CI/CD pipelines"
       ],
       "sourceQuip": "Your PR reviewer never sleeps, never gets passive-aggressive, and charges by the token."
     },
@@ -1392,22 +986,13 @@
       "whatHappened": [
         "\"Most ambitious full-stack consumer+coding agent startup I've ever seen\"",
         "Sidekick agent builds agents and publishes them on its own app store",
-        "Swyx \"vibe designed\" a 6,000-person conference website without reading a line of code",
-        "**Why it matters:**",
-        "An agent that builds agents and publishes them is a recursion worth tracking",
-        "**What's next:**",
-        "Public access and pricing",
-        "**Source quip:** An agent that builds agents that build apps. Inception had fewer layers."
+        "Swyx \"vibe designed\" a 6,000-person conference website without reading a line of code"
       ],
       "whyItMatters": [
-        "An agent that builds agents and publishes them is a recursion worth tracking",
-        "**What's next:**",
-        "Public access and pricing",
-        "**Source quip:** An agent that builds agents that build apps. Inception had fewer layers."
+        "An agent that builds agents and publishes them is a recursion worth tracking"
       ],
       "whatsNext": [
-        "Public access and pricing",
-        "**Source quip:** An agent that builds agents that build apps. Inception had fewer layers."
+        "Public access and pricing"
       ],
       "sourceQuip": "An agent that builds agents that build apps. Inception had fewer layers."
     },
@@ -1422,22 +1007,13 @@
       "color": "#A87ED4",
       "category": "Shiny New Things",
       "whatHappened": [
-        "30+ marketplace plugins from partners enabling Cursor to read, write, and take actions across developer tools",
-        "**Why it matters:**",
-        "Cursor building a platform, not just an editor",
-        "**What's next:**",
-        "Plugin ecosystem growth as a moat",
-        "**Source quip:** Thirty plugins on day one. The marketplace strategy is speedrunning."
+        "30+ marketplace plugins from partners enabling Cursor to read, write, and take actions across developer tools"
       ],
       "whyItMatters": [
-        "Cursor building a platform, not just an editor",
-        "**What's next:**",
-        "Plugin ecosystem growth as a moat",
-        "**Source quip:** Thirty plugins on day one. The marketplace strategy is speedrunning."
+        "Cursor building a platform, not just an editor"
       ],
       "whatsNext": [
-        "Plugin ecosystem growth as a moat",
-        "**Source quip:** Thirty plugins on day one. The marketplace strategy is speedrunning."
+        "Plugin ecosystem growth as a moat"
       ],
       "sourceQuip": "Thirty plugins on day one. The marketplace strategy is speedrunning."
     },
@@ -1452,22 +1028,13 @@
       "color": "#E07858",
       "category": "Shiny New Things",
       "whatHappened": [
-        "Sora 1 retiring for US users tomorrow. Sora 2 becomes the only option",
-        "**Why it matters:**",
-        "End of an era for OpenAI's first video generation model",
-        "**What's next:**",
-        "Sora 2 improvements",
-        "**Source quip:** Sora 1 lived fast and died young. So it goes."
+        "Sora 1 retiring for US users tomorrow. Sora 2 becomes the only option"
       ],
       "whyItMatters": [
-        "End of an era for OpenAI's first video generation model",
-        "**What's next:**",
-        "Sora 2 improvements",
-        "**Source quip:** Sora 1 lived fast and died young. So it goes."
+        "End of an era for OpenAI's first video generation model"
       ],
       "whatsNext": [
-        "Sora 2 improvements",
-        "**Source quip:** Sora 1 lived fast and died young. So it goes."
+        "Sora 2 improvements"
       ],
       "sourceQuip": "Sora 1 lived fast and died young. So it goes."
     },
@@ -1482,22 +1049,13 @@
       "color": "#5AB8B0",
       "category": "Bags",
       "whatHappened": [
-        "VP interview details Coursera's enterprise AI training operation at $239M scale",
-        "**Why it matters:**",
-        "AI upskilling is becoming a serious revenue line, not just a cost center",
-        "**What's next:**",
-        "Watch for more enterprise training platforms at this scale",
-        "**Source quip:** $239 million in training revenue. Turns out the real money in AI is teaching people about AI."
+        "VP interview details Coursera's enterprise AI training operation at $239M scale"
       ],
       "whyItMatters": [
-        "AI upskilling is becoming a serious revenue line, not just a cost center",
-        "**What's next:**",
-        "Watch for more enterprise training platforms at this scale",
-        "**Source quip:** $239 million in training revenue. Turns out the real money in AI is teaching people about AI."
+        "AI upskilling is becoming a serious revenue line, not just a cost center"
       ],
       "whatsNext": [
-        "Watch for more enterprise training platforms at this scale",
-        "**Source quip:** $239 million in training revenue. Turns out the real money in AI is teaching people about AI."
+        "Watch for more enterprise training platforms at this scale"
       ],
       "sourceQuip": "$239 million in training revenue. Turns out the real money in AI is teaching people about AI."
     },
@@ -1513,22 +1071,13 @@
       "category": "Brains",
       "whatHappened": [
         "Google's experiments show reasoning improves factual recall by acting as a computational buffer",
-        "But hallucinated intermediate facts increased final-answer errors",
-        "**Why it matters:**",
-        "Confirms reasoning helps but introduces a new failure mode: confident wrong intermediate steps",
-        "**What's next:**",
-        "Expect follow-up work on filtering hallucinated intermediates",
-        "**Source quip:** Thinking harder helps you remember more, but occasionally you remember things that never happened."
+        "But hallucinated intermediate facts increased final-answer errors"
       ],
       "whyItMatters": [
-        "Confirms reasoning helps but introduces a new failure mode: confident wrong intermediate steps",
-        "**What's next:**",
-        "Expect follow-up work on filtering hallucinated intermediates",
-        "**Source quip:** Thinking harder helps you remember more, but occasionally you remember things that never happened."
+        "Confirms reasoning helps but introduces a new failure mode: confident wrong intermediate steps"
       ],
       "whatsNext": [
-        "Expect follow-up work on filtering hallucinated intermediates",
-        "**Source quip:** Thinking harder helps you remember more, but occasionally you remember things that never happened."
+        "Expect follow-up work on filtering hallucinated intermediates"
       ],
       "sourceQuip": "Thinking harder helps you remember more, but occasionally you remember things that never happened."
     },
@@ -1563,22 +1112,13 @@
       "color": "#5CBD9A",
       "category": "Shiny New Things",
       "whatHappened": [
-        "Interactive visual modules for 70+ math and science topics with real-time variable manipulation",
-        "**Why it matters:**",
-        "Makes ChatGPT a hands-on learning tool, not just a text generator",
-        "**What's next:**",
-        "More subjects and integration into education platforms",
-        "**Source quip:** Finally, a way to learn the Pythagorean theorem that doesn't involve a chalkboard."
+        "Interactive visual modules for 70+ math and science topics with real-time variable manipulation"
       ],
       "whyItMatters": [
-        "Makes ChatGPT a hands-on learning tool, not just a text generator",
-        "**What's next:**",
-        "More subjects and integration into education platforms",
-        "**Source quip:** Finally, a way to learn the Pythagorean theorem that doesn't involve a chalkboard."
+        "Makes ChatGPT a hands-on learning tool, not just a text generator"
       ],
       "whatsNext": [
-        "More subjects and integration into education platforms",
-        "**Source quip:** Finally, a way to learn the Pythagorean theorem that doesn't involve a chalkboard."
+        "More subjects and integration into education platforms"
       ],
       "sourceQuip": "Finally, a way to learn the Pythagorean theorem that doesn't involve a chalkboard."
     },
@@ -1604,24 +1144,14 @@
       "category": "Brains",
       "whatHappened": [
         "Insider from the Manus agent team shares a contrarian stance against function/tool calling after 2 years of building agents",
-        "Uses an alternative approach (likely structured output parsing)",
-        "**Why it matters:**",
-        "Challenges the industry consensus on how to build AI agents",
-        "323 comments suggests deep technical engagement",
-        "**What's next:**",
-        "Watch for alternative architectures gaining traction in agent frameworks",
-        "**Source quip:** Sometimes the best feature is the one you delete."
+        "Uses an alternative approach (likely structured output parsing)"
       ],
       "whyItMatters": [
         "Challenges the industry consensus on how to build AI agents",
-        "323 comments suggests deep technical engagement",
-        "**What's next:**",
-        "Watch for alternative architectures gaining traction in agent frameworks",
-        "**Source quip:** Sometimes the best feature is the one you delete."
+        "323 comments suggests deep technical engagement"
       ],
       "whatsNext": [
-        "Watch for alternative architectures gaining traction in agent frameworks",
-        "**Source quip:** Sometimes the best feature is the one you delete."
+        "Watch for alternative architectures gaining traction in agent frameworks"
       ],
       "sourceQuip": "Sometimes the best feature is the one you delete."
     },
@@ -1636,22 +1166,13 @@
       "color": "#E07858",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "Post tapping into the fear that over-reliance on AI degrades human capability",
-        "**Why it matters:**",
-        "High comment-to-upvote ratio signals heated debate, not just agreement",
-        "**What's next:**",
-        "This anxiety isn't going away",
-        "**Source quip:** 469 comments debating whether AI makes you dumber. The irony writes itself."
+        "Post tapping into the fear that over-reliance on AI degrades human capability"
       ],
       "whyItMatters": [
-        "High comment-to-upvote ratio signals heated debate, not just agreement",
-        "**What's next:**",
-        "This anxiety isn't going away",
-        "**Source quip:** 469 comments debating whether AI makes you dumber. The irony writes itself."
+        "High comment-to-upvote ratio signals heated debate, not just agreement"
       ],
       "whatsNext": [
-        "This anxiety isn't going away",
-        "**Source quip:** 469 comments debating whether AI makes you dumber. The irony writes itself."
+        "This anxiety isn't going away"
       ],
       "sourceQuip": "469 comments debating whether AI makes you dumber. The irony writes itself."
     },
@@ -1666,14 +1187,10 @@
       "color": "#5AB8B0",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "Fast-food customer support bot demonstrating coding capability",
-        "**Why it matters:**",
-        "Cultural normalization of AI capability hitting unexpected contexts",
-        "**Source quip:** Chipotle's bot passed the coding interview. Your burrito is still going to be wrong."
+        "Fast-food customer support bot demonstrating coding capability"
       ],
       "whyItMatters": [
-        "Cultural normalization of AI capability hitting unexpected contexts",
-        "**Source quip:** Chipotle's bot passed the coding interview. Your burrito is still going to be wrong."
+        "Cultural normalization of AI capability hitting unexpected contexts"
       ],
       "sourceQuip": "Chipotle's bot passed the coding interview. Your burrito is still going to be wrong."
     },
@@ -1699,22 +1216,13 @@
       "category": "Brains",
       "whatHappened": [
         "Benchmark of 56 language models with implanted hidden behaviors",
-        "Designed to measure progress in alignment auditing",
-        "**Why it matters:**",
-        "First standardized benchmark for catching sleeper behaviors in models",
-        "**What's next:**",
-        "Other labs will likely adopt it for their own testing",
-        "**Source quip:** Fifty-six models with hidden agendas. Sounds like an office party."
+        "Designed to measure progress in alignment auditing"
       ],
       "whyItMatters": [
-        "First standardized benchmark for catching sleeper behaviors in models",
-        "**What's next:**",
-        "Other labs will likely adopt it for their own testing",
-        "**Source quip:** Fifty-six models with hidden agendas. Sounds like an office party."
+        "First standardized benchmark for catching sleeper behaviors in models"
       ],
       "whatsNext": [
-        "Other labs will likely adopt it for their own testing",
-        "**Source quip:** Fifty-six models with hidden agendas. Sounds like an office party."
+        "Other labs will likely adopt it for their own testing"
       ],
       "sourceQuip": "Fifty-six models with hidden agendas. Sounds like an office party."
     },
@@ -1729,22 +1237,13 @@
       "color": "#E8A84C",
       "category": "Brains",
       "whatHappened": [
-        "Official model card confirms Gemini 3.1 Pro significantly outperforms Gemini 3 Pro",
-        "**Why it matters:**",
-        "Confirms a frontier model update is live and available",
-        "**What's next:**",
-        "Enterprise and developer adoption",
-        "**Source quip:** The quiet update that nobody noticed but everyone's already using."
+        "Official model card confirms Gemini 3.1 Pro significantly outperforms Gemini 3 Pro"
       ],
       "whyItMatters": [
-        "Confirms a frontier model update is live and available",
-        "**What's next:**",
-        "Enterprise and developer adoption",
-        "**Source quip:** The quiet update that nobody noticed but everyone's already using."
+        "Confirms a frontier model update is live and available"
       ],
       "whatsNext": [
-        "Enterprise and developer adoption",
-        "**Source quip:** The quiet update that nobody noticed but everyone's already using."
+        "Enterprise and developer adoption"
       ],
       "sourceQuip": "The quiet update that nobody noticed but everyone's already using. ---"
     },
@@ -1759,22 +1258,13 @@
       "color": "#5CBD9A",
       "category": "Brains",
       "whatHappened": [
-        "D4RT reconstructs full 4D scenes (geometry + motion over time) from a single video input",
-        "**Why it matters:**",
-        "Applications in robotics, AR, and simulation",
-        "**What's next:**",
-        "Watch for integration into Google's AR products",
-        "**Source quip:** Give it one video and it builds the whole scene. The real magic is what it invents behind the camera."
+        "D4RT reconstructs full 4D scenes (geometry + motion over time) from a single video input"
       ],
       "whyItMatters": [
-        "Applications in robotics, AR, and simulation",
-        "**What's next:**",
-        "Watch for integration into Google's AR products",
-        "**Source quip:** Give it one video and it builds the whole scene. The real magic is what it invents behind the camera."
+        "Applications in robotics, AR, and simulation"
       ],
       "whatsNext": [
-        "Watch for integration into Google's AR products",
-        "**Source quip:** Give it one video and it builds the whole scene. The real magic is what it invents behind the camera."
+        "Watch for integration into Google's AR products"
       ],
       "sourceQuip": "Give it one video and it builds the whole scene. The real magic is what it invents behind the camera."
     },
@@ -1800,14 +1290,10 @@
       "category": "Everyone's Talking",
       "whatHappened": [
         "Highest comment density thread on r/ChatGPT today (531 comments on 467 upvotes)",
-        "User migration narrative from ChatGPT to Claude is clearly live",
-        "**Why it matters:**",
-        "The #QuitGPT movement is showing up in actual user behavior, not just protest posts",
-        "**Source quip:** 531 comments. Turns out switching AI assistants is the new switching phone carriers."
+        "User migration narrative from ChatGPT to Claude is clearly live"
       ],
       "whyItMatters": [
-        "The #QuitGPT movement is showing up in actual user behavior, not just protest posts",
-        "**Source quip:** 531 comments. Turns out switching AI assistants is the new switching phone carriers."
+        "The #QuitGPT movement is showing up in actual user behavior, not just protest posts"
       ],
       "sourceQuip": "531 comments. Turns out switching AI assistants is the new switching phone carriers."
     },
@@ -1822,22 +1308,13 @@
       "color": "#E07858",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "Viral post (likely a screenshot/meme) that hit 7,298 upvotes — the highest single-post upvote count across all subreddits today",
-        "**Why it matters:**",
-        "The engagement speaks for itself. r/ChatGPT is where mainstream AI culture happens",
-        "**What's next:**",
-        "These moments define how non-technical people think about AI",
-        "**Source quip:** 7,298 people agreed. None of them used laser focus."
+        "Viral post (likely a screenshot/meme) that hit 7,298 upvotes — the highest single-post upvote count across all subreddits today"
       ],
       "whyItMatters": [
-        "The engagement speaks for itself. r/ChatGPT is where mainstream AI culture happens",
-        "**What's next:**",
-        "These moments define how non-technical people think about AI",
-        "**Source quip:** 7,298 people agreed. None of them used laser focus."
+        "The engagement speaks for itself. r/ChatGPT is where mainstream AI culture happens"
       ],
       "whatsNext": [
-        "These moments define how non-technical people think about AI",
-        "**Source quip:** 7,298 people agreed. None of them used laser focus."
+        "These moments define how non-technical people think about AI"
       ],
       "sourceQuip": "7,298 people agreed. None of them used laser focus."
     },
@@ -1852,22 +1329,13 @@
       "color": "#5AB8B0",
       "category": "Shiny New Things",
       "whatHappened": [
-        "Open-source environment framework for AI agent development",
-        "**Why it matters:**",
-        "More open tooling for building agents",
-        "**What's next:**",
-        "Community adoption and contributions",
-        "**Source quip:** Open source gets another framework. Developers get another tab to keep open."
+        "Open-source environment framework for AI agent development"
       ],
       "whyItMatters": [
-        "More open tooling for building agents",
-        "**What's next:**",
-        "Community adoption and contributions",
-        "**Source quip:** Open source gets another framework. Developers get another tab to keep open."
+        "More open tooling for building agents"
       ],
       "whatsNext": [
-        "Community adoption and contributions",
-        "**Source quip:** Open source gets another framework. Developers get another tab to keep open."
+        "Community adoption and contributions"
       ],
       "sourceQuip": "Open source gets another framework. Developers get another tab to keep open. ---"
     },
@@ -1882,22 +1350,13 @@
       "color": "#7C83D4",
       "category": "Shiny New Things",
       "whatHappened": [
-        "Three product families, global routing, Eleven v3 TTS models, custom content guardrails, WhatsApp support",
-        "**Why it matters:**",
-        "Platform maturation for the leading voice AI company",
-        "**What's next:**",
-        "Enterprise adoption of guardrails and routing features",
-        "**Source quip:** The changelog nobody reads and everybody benefits from."
+        "Three product families, global routing, Eleven v3 TTS models, custom content guardrails, WhatsApp support"
       ],
       "whyItMatters": [
-        "Platform maturation for the leading voice AI company",
-        "**What's next:**",
-        "Enterprise adoption of guardrails and routing features",
-        "**Source quip:** The changelog nobody reads and everybody benefits from."
+        "Platform maturation for the leading voice AI company"
       ],
       "whatsNext": [
-        "Enterprise adoption of guardrails and routing features",
-        "**Source quip:** The changelog nobody reads and everybody benefits from."
+        "Enterprise adoption of guardrails and routing features"
       ],
       "sourceQuip": "The changelog nobody reads and everybody benefits from."
     },
@@ -1952,22 +1411,13 @@
       "color": "#A87ED4",
       "category": "Brains",
       "whatHappened": [
-        "New 9B open coding agent model trained on a large set of agentic trajectories",
-        "**Why it matters:**",
-        "More agentic training data at smaller model sizes opens up local deployment",
-        "**What's next:**",
-        "Benchmarks against existing coding agents coming soon",
-        "**Source quip:** 425,000 trajectories of \"how to fix the bug\" compressed into 9 billion parameters."
+        "New 9B open coding agent model trained on a large set of agentic trajectories"
       ],
       "whyItMatters": [
-        "More agentic training data at smaller model sizes opens up local deployment",
-        "**What's next:**",
-        "Benchmarks against existing coding agents coming soon",
-        "**Source quip:** 425,000 trajectories of \"how to fix the bug\" compressed into 9 billion parameters."
+        "More agentic training data at smaller model sizes opens up local deployment"
       ],
       "whatsNext": [
-        "Benchmarks against existing coding agents coming soon",
-        "**Source quip:** 425,000 trajectories of \"how to fix the bug\" compressed into 9 billion parameters."
+        "Benchmarks against existing coding agents coming soon"
       ],
       "sourceQuip": "425,000 trajectories of \"how to fix the bug\" compressed into 9 billion parameters."
     },
@@ -1992,22 +1442,13 @@
       "color": "#5AB8B0",
       "category": "Brains",
       "whatHappened": [
-        "New algorithm claims to outperform Google DeepMind's AlphaEvolve evolutionary optimization at lower cost",
-        "**Why it matters:**",
-        "If results hold, it democratizes program search capabilities",
-        "**What's next:**",
-        "Independent replication needed",
-        "**Source quip:** David brings a calculator to Goliath's GPU farm."
+        "New algorithm claims to outperform Google DeepMind's AlphaEvolve evolutionary optimization at lower cost"
       ],
       "whyItMatters": [
-        "If results hold, it democratizes program search capabilities",
-        "**What's next:**",
-        "Independent replication needed",
-        "**Source quip:** David brings a calculator to Goliath's GPU farm."
+        "If results hold, it democratizes program search capabilities"
       ],
       "whatsNext": [
-        "Independent replication needed",
-        "**Source quip:** David brings a calculator to Goliath's GPU farm."
+        "Independent replication needed"
       ],
       "sourceQuip": "David brings a calculator to Goliath's GPU farm."
     },
@@ -2022,14 +1463,10 @@
       "color": "#7C83D4",
       "category": "Everyone's Talking",
       "whatHappened": [
-        "Full game generation: GDScript, assets, and visual QA to find its own bugs",
-        "**Why it matters:**",
-        "End-to-end creative output from a single prompt continues to push boundaries",
-        "**Source quip:** Claude made a game and then QA'd its own bugs. Somewhere a QA team just updated their resume."
+        "Full game generation: GDScript, assets, and visual QA to find its own bugs"
       ],
       "whyItMatters": [
-        "End-to-end creative output from a single prompt continues to push boundaries",
-        "**Source quip:** Claude made a game and then QA'd its own bugs. Somewhere a QA team just updated their resume."
+        "End-to-end creative output from a single prompt continues to push boundaries"
       ],
       "sourceQuip": "Claude made a game and then QA'd its own bugs. Somewhere a QA team just updated their resume. ---"
     },
