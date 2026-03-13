@@ -36,7 +36,7 @@ function showError(container, message) {
 // ─── Story rendering ──────────────────────────────────────────────────────────
 
 function storyRowHtml(story, isEssential) {
-  const hasBody = !!(story.bodyParagraph1 || story.sourceQuip);
+  const hasBody = !!(story.bodyParagraph1 || story.whatHappened || story.sourceQuip);
 
   const badge = isEssential
     ? `<span class="essential-badge" style="background:${escapeHtml(story.color)}20; color:${escapeHtml(story.color)}">Need to know</span>`

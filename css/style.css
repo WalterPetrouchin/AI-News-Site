@@ -712,15 +712,20 @@ a {
 .body-section {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .body-section-label {
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--text-muted);
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-muted) 20%, transparent);
 }
 
 .story-bullets {

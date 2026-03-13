@@ -65,11 +65,12 @@ def extract_bullet_section(block: str, section_name: str) -> list:
       - **What happened:**
         - Bullet one
         - Bullet two
+    Stops at the next section header (- **Label:**) to avoid bleeding.
     Returns a list of strings, one per bullet.
     """
     pattern = (r'-\s+\*\*' + re.escape(section_name) + r':?\*\*'
                r'[^\n]*\n'
-               r'((?:[ \t]+-\s+.+\n?)+)')
+               r'((?:[ \t]+-\s+(?!\*\*).+\n?)+)')
     m = re.search(pattern, block, re.MULTILINE)
     if not m:
         return []
