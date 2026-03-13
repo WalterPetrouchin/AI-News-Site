@@ -78,9 +78,9 @@ function storyRowHtml(story, isEssential) {
     }
   }
 
-  // Source quip with link to original source
+  // Source quip as a clickable link to the original source
   if (story.sourceQuip && story.url) {
-    bodyInnerHtml += `<p class="source-quip"><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener">Still curious?</a> ${escapeHtml(story.sourceQuip)}</p>`;
+    bodyInnerHtml += `<p class="source-quip"><a href="${escapeHtml(story.url)}" target="_blank" rel="noopener">${escapeHtml(story.sourceQuip)}</a></p>`;
   } else if (story.sourceQuip) {
     bodyInnerHtml += `<p class="source-quip">${escapeHtml(story.sourceQuip)}</p>`;
   }
